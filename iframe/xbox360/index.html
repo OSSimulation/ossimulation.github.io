@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>360</title>
+    <link rel="stylesheet" href="./360.css">
+</head>
+<body class="default">
+    <button id="hider" class="notif" onclick='document.getElementById("sfx_bladeopen").currentTime=0; document.getElementById("sfx_bladeopen").play(); document.getElementById("hider").className = "invisible"; document.getElementById("left").className = "left"; document.getElementById("right").className = "right"; setTimeout(function() {document.getElementById("center").className = "container"; document.getElementById("left").className = "fin_left"; document.getElementById("right").className = "fin_right";}, 700);'> 
+       <div class="preview_left"></div>
+        Play
+       <div class="preview_right"></div>
+    </button>
+    <audio id="sfx_bladeopen"><source src="bladesopen.wav" type="audio/wav"></audio>
+    <audio id="sfx_cancel"><source src="back.wav" type="audio/wav"></audio>
+    <audio id="sfx_deny"><source src="deny.wav" type="audio/wav"></audio>
+    <audio id="sfx_move"><source src="move.wav" type="audio/wav"></audio>
+    <audio id="sfx_ok"><source src="select.wav" type="audio/wav"></audio>
+    <div id="left" class="l_eft"></div>
+    <div class="center">
+        <div id="center" class="invisible">
+            <div class="topdiv">
+                <img src="X360GuiTest_LowRes.png">
+            </div>
+            <div class="centerdiv">
+                <p>XBOX 360 Gui Test is a simulation of Microsoft's first XBOX 360 dashboard revision.</p>
+                <p>It's currently in development, but it will be released soon.</p>
+                <p>If you want to see a preview, press the button below!</p>
+            </div>
+            <div class="bottomdiv">
+                <a target="_parent" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play(); document.getElementById('ytpreview').className = 'preview'; document.getElementById('backbtn').className = 'backbtn'"><button>Watch Preview</button></a>
+            </div>
+        </div>
+    </div>
+    <div id="right" class="r_ight"></div>
+    <a id="backbtn" class="invisible" target="_parent" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play(); document.getElementById('ytpreview').className = 'invisible'; document.getElementById('backbtn').className = 'invisible'"><button>Back</button></a>
+    <iframe id="ytpreview" class="invisible" src="https://www.youtube.com/embed/jtwMSy-8LqM"></iframe>
+</body>

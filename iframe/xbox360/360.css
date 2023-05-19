@@ -1,0 +1,280 @@
+@keyframes scrollin_l {
+    from {
+        left: -60%
+    }
+
+    to {
+        left: -85%
+    }
+}
+
+@keyframes scrollin_r {
+    from {
+        left: 60%
+    }
+
+    to {
+        left: 85%
+    }
+}
+
+iframe {
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -10000;
+}
+
+.preview {
+    z-index: 1000000 !important;
+}
+
+.backbtn {
+    position: fixed;
+    z-index: 10000001 !important;
+}
+
+@keyframes button {
+    from {
+        box-shadow: none;
+    }
+
+    to {
+        box-shadow: #00000070 0px 4px 7px 1px;
+    }
+}
+
+@keyframes buttonfadeout {
+    from {
+        box-shadow: #00000070 0px 4px 7px 1px;
+    }
+
+    to {
+        box-shadow: none;
+    }
+}
+
+* {
+    font-family: "Convection UI";
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "Convection UI";
+    src: url("Convmd.ttf");
+}
+
+.notif {
+    position: fixed;
+    font-size: 30px;
+    width: 100%;
+    border: none;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(7, 123, 19);
+    background-image: url(xboxanim.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.invisible, .invisible button {
+    display: none;
+    width: 0px;
+    height: 0px;
+}
+
+
+.left {
+    border-radius: 100%;
+    top: -70%;
+    left: -85%;
+    animation-name: scrollin_l;
+    animation-timing-function: linear;
+    animation-duration: 0.7s;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: black;
+    position: fixed;
+    width: 100%;
+    height: 240%;
+    background: #8d8d8d;
+    background: linear-gradient(90deg, #f6f6f6, #8d8d8dff);
+    box-shadow: 0px 0px 12px 0;
+}
+
+.preview_left {
+    border-radius: 100%;
+    top: -70%;
+    left: -60%;
+    position: fixed;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: black;
+    width: 100%;
+    height: 240%;
+    background: #8d8d8d;
+    background: linear-gradient(90deg, #f6f6f6, #8d8d8dff);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 12px 0;
+}
+
+.fin_left {
+    border-radius: 100%;
+    top: -70%;
+    left: -85%;
+    position: fixed;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: black;
+    width: 100%;
+    height: 240%;
+    background: #8d8d8d;
+    background: linear-gradient(90deg, #f6f6f6, #8d8d8dff);
+    box-shadow: 0px 0px 12px 0;
+}
+
+.right {
+    border-radius: 100%;
+    top: -70%;
+    left: 85%;
+    animation-name: scrollin_r;
+    animation-timing-function: linear;
+    animation-duration: 0.7s;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: black;
+    position: fixed;
+    width: 100%;
+    height: 240%;
+    background: #8d8d8d;
+    background: linear-gradient(270deg, #f6f6f6, #8d8d8dff);
+    box-shadow: 0px 0px 12px 0;
+}
+
+.preview_right {
+    border-radius: 100%;
+    top: -70%;
+    left: 60%;
+    position: fixed;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: black;
+    width: 100%;
+    height: 240%;
+    background: #8d8d8d;
+    background: linear-gradient(270deg, #f6f6f6, #8d8d8dff);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 12px 0;
+}
+
+.fin_right {
+    border-radius: 100%;
+    top: -70%;
+    left: 85%;
+    position: fixed;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: black;
+    width: 100%;
+    height: 240%;
+    background: #8d8d8d;
+    background: linear-gradient(270deg, #f6f6f6, #8d8d8dff);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 12px 0;
+}
+
+.center {
+    padding-left: 6%;
+    padding-right: 14%;
+    position: fixed;
+    left: 10%;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(7, 123, 19);
+    background-image: url(xboxanim.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+}
+
+.container {
+    position: fixed;
+    width: 69%;
+    height: 100%;
+}
+
+.topdiv {
+    display: block;
+    position: fixed;
+    width: 69%;
+    height: 20%;
+}
+
+.topdiv img {
+    display: block;
+    padding: 7px;
+    height: 100%;
+}
+
+.centerdiv {
+    position: fixed;
+    top: 20%;
+    width: 69%;
+    height: 60%;
+}
+
+.centerdiv p {
+    padding: 7px;
+    color: white;
+}
+
+.bottomdiv {
+    position: fixed;
+    top: 80%;
+    width: 69%;
+    height: 20%;
+}
+
+.bottomdiv button {
+    width: 120%;
+    height: 80%;
+    cursor: pointer;
+    color: black;
+    background: #a6a6a63d;
+    background: linear-gradient(90deg, #a6a6a63d 0%, #a6a6a63d 100%);;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #606060;
+    border-left-style: none;
+    border-right-style: none;
+    animation-name: buttonfadeout;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+    font-size: 30px;
+}
+
+.bottomdiv button:hover,
+.bottomdiv button:active,
+.bottomdiv button:focus {
+    animation-name: button;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+    background: linear-gradient(90deg, #3535353d 0%, #ffffff5e 30%, #fff 45%, #ffffff5e 60%, #3535353d 100%);
+    box-shadow: #00000070 0px 4px 7px 1px;
+}
+
+.bottomdiv a {
+    position: relative;
+    left: -10%;
+}
+
+.backbtn button {
+    width: 50px;
+    height: 30px;
+    top: 10px;
+    left: 10px;
+    position: fixed;
+}

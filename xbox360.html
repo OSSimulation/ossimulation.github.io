@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="x360" lang="en">
+
+<head>
+    <title>XBOX 360 Gui Test</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <meta content="XBOX 360 Gui Test - The OS Simulation Project" property="og:title">
+    <meta
+        content="The OS Simulation Project is a project where we make Roblox games that simulate discontinued operating systems, while trying to be as accurate to the original as possible. This GitHub organisation is for our open-source projects."
+        property="og:description">
+    <meta content="https://thomasluigi07.github.io/OSSimulationWebsite" property="og:url">
+    <meta content="https://thomasluigi07.github.io/OSSimulationWebsite/THEOSSIMULATIONPROJECT_LOWRES.png.png"
+        property="og:image">
+</head>
+
+<body>
+    <audio id="sfx_deny"><source src="btn_InactiveFocus.wav" type="audio/wav"></audio>
+    <audio id="sfx_move"><source src="vk_Focus.wav" type="audio/wav"></audio>
+    <audio id="sfx_ok"><source src="vk_Select.wav" type="audio/wav"></audio>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" href="./index.html"><img src="./THEOSSIMULATIONPROJECT_LOWRES.png"></a>
+            <a class="winxp" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" href="./winxp.html"><img src="./windowsxpguitest_horizontal.png  "></a>
+            <a class="ios" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" href="./ios6.html"><img src="./ios6logo_lowres.png"></a>
+            <a class="xbox" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_deny').currentTime=0; document.getElementById('sfx_deny').play();" href="#"><img src="./xbox360guitesthorizontal_lowres.png"></a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="contentcontainer">
+            <iframe src="iframe/xbox360/index.html">
+                <p>Sorry, but your browser doesn't support iFrames. Please use a modern browser.</p>
+            </iframe>        
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://github.com/OSSimulation">GitHub</a>
+        <a href="https://www.roblox.com/groups/14298372">Roblox</a>
+        <a href="https://twitter.com/OSSimulation">Twitter</a>
+        <a href="https://youtube.com/@OSSimulation">YouTube</a>
+    </div>
+</body>
+
+</html>
