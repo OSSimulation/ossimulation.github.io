@@ -22,8 +22,17 @@ html {
 }
 
 .navbar {
+    min-width: 585px;
     display: block;
+    position: relative;
+    max-width: 724px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-bottom-style: none;
     width: 100%;
+    margin: 5px auto;
     height: 50px;
     background-color: black;
     background-image: url(./darkheader.png);
@@ -35,16 +44,26 @@ html {
     box-shadow: rgba(0, 0, 0, 0.25) 0 10px 9px;
 }
 
+.logo {
+    max-width: 524px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+
 html.x360 .content {padding: 0px;}
 
 .content {
     color: white;
     display: block;
     max-width: 724px;
+    min-width: 585px;
     margin: 5px auto;
-    margin-top: 10px;
+    margin-top: -9px;
+    z-index: -3;
     background: black;
-    background-color: rgba(0, 0, 0, 0.439);
+    background-color: #000000;
     border-width: 1px;
     border-style: solid;
     /* border-color: white; */
@@ -66,8 +85,9 @@ html.x360 .content {padding: 0px;}
     color: white;
     display: block;
     text-align: center;
-    width: 724px;
+    width: 100%;
     max-width: 724px;
+    min-width: 585px;
     margin: 5px auto;
     margin-top: 10px;
 }
@@ -82,6 +102,7 @@ html.x360 .content {padding: 0px;}
     display: table;
     width: 100%;
     max-width: 724px;
+    min-width: 585px;
     height: 50px;
 }
 
@@ -116,6 +137,8 @@ html.x360 .contentcontainer {
 }
 
 .container a {
+    background-image: url(./darkheader.png);
+    width: 33.3333333333%;
     padding-left: 5px;
     padding-right: 5px;
     display: table-cell;
@@ -124,14 +147,19 @@ html.x360 .contentcontainer {
     text-decoration: none;
 }
 
+.container a:hover, .container a:active, .container a:focus {
+    background-image: url(./lightheader.png);
+}
+
+
 iframe {
     border: none;
     margin: 0px;
-    margin-bottom: -3px;
+    margin-bottom: -3.5px;
     padding: 0px;
     aspect-ratio: 16 / 9;
     width: 100%;
-    min-width: 532px;
+    min-width: 585px;
 }
 
 .winxp:hover, .winxp:focus, .winxp:active, .winxp.selected {
@@ -147,14 +175,18 @@ iframe {
 }
 
 .container a img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 20px;
     cursor: pointer;
-    vertical-align: middle;
 }
 
 .logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 40px !important;
-    vertical-align: middle;
 }
 
 .biglogo {
