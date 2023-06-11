@@ -160,6 +160,7 @@ iframe {
     aspect-ratio: 16 / 9;
     width: 100%;
     min-width: 585px;
+    min-height: 310px;
 }
 
 .winxp:hover, .winxp:focus, .winxp:active, .winxp.selected {
