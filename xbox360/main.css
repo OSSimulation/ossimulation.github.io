@@ -1,0 +1,235 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #595758;
+    background-image: url(background.gif);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    color: #515151;
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+    font-size: 100%;
+    text-align: center;
+    height: 100%;
+    font-size: .7em;
+    margin: 0;
+    padding: 0;
+}
+
+#XbcShell {
+    position: relative;
+    background-image: url(ImageSheetRepeat.gif);
+    margin: 0 auto;
+    padding: 0;
+    width: 770px;
+    text-align: left;
+}
+
+#XbcShellTop {
+    background-image: url(ImageSheetRepeat.gif);
+    background-color: #e2e2e2;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 770px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 12px;
+    height: 92px;
+}
+
+#XbcShellTopUtility {
+    background-color: #515151;
+    color: #C3C3C3;
+    position: relative;
+    left: 5px;
+    margin: 0;
+    padding: 0;
+    width: 760px;
+    line-height: 17px;
+    font-size: 10px;
+    height: 23px;
+}
+
+#XbcShellTopUtilityLeft {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 12px;
+    width: 360px;
+    top: 2px;
+}
+
+#XbcShellTopUtilityLeft span,
+#XbcShellTopUtilityLeft span p,
+#XbcShellTopUtilityLeft span a {
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 18px;
+    float: left;
+}
+
+#XbcShellTopUtilityRight {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 365px;
+    width: 391px;
+    line-height: 17px;
+    text-align: right;
+    top: 2px;
+    font-size: 10px;
+}
+
+#XbcShellTopUtilityRight span,
+#XbcShellTopUtilityRight span p,
+#XbcShellTopUtilityRight span a {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 18px;
+}
+
+#XbcShellTopUtilityRight span p a {
+    color: #11ac06;
+    text-decoration: none;
+}
+
+#XbcShellTopUtilityRight span p a:hover,
+#XbcShellTopUtilityRight span p a:active,
+#XbcShellTopUtilityRight a:focus {
+    color: #39f82c;
+    text-decoration: underline;
+}
+
+#XbcShellTopBrand {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image: url(ImageSheet.gif);
+    background-position: -5px -23px;
+    height: 120px;
+    width: 760px;
+    left: 5px;
+}
+
+#XbcShellTopBrandLogo {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 120px;
+    width: 760px;
+    left: 5px;
+}
+
+#XbcShellTopBrandLogo img {
+    margin: 0;
+    margin-left: -5px;
+    padding: 0;
+    width: 350px;
+    height: 68px;
+}
+
+#XbcShellBody {
+    border-top: #515151;
+    border-top-style: solid;
+    border-top-width: 3px;
+    margin: 0 5px;
+    padding: 0;
+    width: 760px;
+    text-align: left;
+    overflow: hidden;
+}
+
+iframe {
+    border: none;
+    margin: 0px;
+    margin-bottom: -3.5px;
+    padding: 0px;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    min-width: 585px;
+    min-height: 310px;
+}
+
+#XbcShellBottom {
+    background-image: url(ImageSheetRepeat.gif);
+    background-color: #515151;
+    color: #B1B1B1;
+    margin: 0;
+    padding: 0;
+    width: 770px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 9px;
+}
+
+#XbcShellBottom a,
+#XbcShellBottom a:link,
+#XbcShellBottom a:visited,
+#XbcShellBottom a:hover {
+    color: #B1B1B1;
+}
+
+#XbcShellBottom a {
+    text-decoration: none;
+}
+
+#XbcShellBottom a:hover,
+#XbcShellBottom a:focus,
+#XbcShellBottom a:active {
+    text-decoration: underline;
+}
+
+#XbcShellBottomDivider {
+    background-image: url(ImageSheet.gif);
+    background-position: 0 -205px;
+    background-color: #515151;
+    position: relative;
+    height: 1px;
+    line-height: 1px;
+    overflow: hidden;
+}
+
+#XbcShellBottomLegal {
+    position: relative;
+    height: 60px;
+    background-image: url(ImageSheet.gif);
+    background-position: 0 -206px;
+    background-color: #515151;
+}
+
+#XbcShellBottomLegal p {
+    width: 620px;
+    display: block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 140px;
+    top: 13px;
+}
+
+#XbcShellBottomLegal ul {
+    display: block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 140px;
+    top: 28px;
+}
+
+#XbcShellBottomLegal li#XbcShellBottomLegalFirst {
+    border-left-style: none;
+    border-left-width: 0;
+    padding: 0 5px 0 0;
+}
+
+#XbcShellBottomLegal li {
+    border-left-color: #B1B1B1;
+    border-left: solid 1px #B1B1B1;
+    display: inline;
+    padding: 0 5px 0 5px;
+    margin: 0;
+}

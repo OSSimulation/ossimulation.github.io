@@ -151,18 +151,6 @@ html.x360 .contentcontainer {
     background-image: url(./lightheader.png);
 }
 
-
-iframe {
-    border: none;
-    margin: 0px;
-    margin-bottom: -3.5px;
-    padding: 0px;
-    aspect-ratio: 16 / 9;
-    width: 100%;
-    min-width: 585px;
-    min-height: 310px;
-}
-
 .winxp:hover, .winxp:focus, .winxp:active, .winxp.selected {
     color: rgb(206, 90, 90);
 }
