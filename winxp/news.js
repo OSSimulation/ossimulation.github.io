@@ -7,9 +7,9 @@ function changeNewsMsg(newsTitl,newsSubTitl,link) {
     newsSubTitle.setAttribute("href",link); // set the link
 }
 function newsLoop() {
-    changeNewsMsg("NEWS","iOS 6 finally gets it's own page","#");
+    changeNewsMsg("NEWS","iOS 6 finally gets its own page","#");
     setTimeout(() => {
-        changeNewsMsg("NEWS","A new update for Windows XP Gui Test has been released after almost a year of no updates","./updates/index.html");
+        changeNewsMsg("NEWS","Windows XP Gui Test is now 3 years old","#");
     }, 5000);
     setTimeout(() => {
         changeNewsMsg("NEWS","A new update for Windows XP Gui Test has been released after almost a year of no updates","./updates/index.html");
