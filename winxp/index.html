@@ -22,6 +22,8 @@
         src="Library.js"> </script>
     <script type="text/javascript"
         src="news.js"> </script>
+    <script type="text/javascript"
+        src="../buttonProtector.js"> </script>
 </head>
 
 <body>
@@ -34,6 +36,9 @@
     <audio id="sfx_ok">
         <source src="../vk_Select.wav" type="audio/wav">
     </audio>
+    <audio id="sfx_kick">
+        <source src="../kick.wav" type="audio/wav">
+    </audio>
     <div id="page">
         <div id="pageC"><a name="top" style="position:absolute">&nbsp;</a>
             <div class="header"><span class="leftAlign"><a href="#" class="headerLink"></a></span><span
@@ -42,7 +47,7 @@
                         href="../index.html" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
                         onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();">The OS Simulation Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
                         class="headerLink"
-                        href="../ios6.html" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
+                        href="../ios6/index.html" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
                         onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();">iOS 6</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
                         class="headerLink"
                         href="../xbox360/index.html" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
@@ -58,7 +63,7 @@
                     </h1>
                     <div id="masterNavLinks">
                         <div class="container">
-                            <a href="./index.html" class="link activeNav">Windows XP Gui Test Home</a>
+                            <a onclick="invalidCounter();" href="#" class="link activeNav">Windows XP Gui Test Home</a>
                             <a href="./updates/index.html" class="">Latest Build Info</a>
                             <a href="./updates/old.html" class="">Previous Build Info</a>
                         </div>
@@ -290,7 +295,7 @@
             <div class="footer">
                 <p>Windows XP and it's related logos are owned by Microsoft Corporation. We are not affiliated with Microsoft, and don't have a license.</p>
                 <p><a href="https://github.com/OSSimulation">GitHub</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
-                        href="https://roblox.com/groups/14298372">Roblox Group</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
+                        href="https://roblox.com/my/groups.aspx?gid=14298372">Roblox Group</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
                         href="https://youtube.com/@OSSimulation">YouTube</a></p>
             </div>
             <script type="text/javascript">try { collapseTabs() } catch (e) { }</script>
