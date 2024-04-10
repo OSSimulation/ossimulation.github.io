@@ -7,25 +7,28 @@ function changeNewsMsg(newsTitl,newsSubTitl,link) {
     newsSubTitle.setAttribute("href",link); // set the link
 }
 function newsLoop() {
-    changeNewsMsg("NEWS","Windows XP Gui Test is now 3 years old","#");
+    changeNewsMsg("NEWS","iOS 6 finally gets it's own page","#");
     setTimeout(() => {
         changeNewsMsg("NEWS","A new update for Windows XP Gui Test has been released after almost a year of no updates","./updates/index.html");
     }, 5000);
     setTimeout(() => {
-        changeNewsMsg("NEWS","iOS 6 is still dead","../ios6/index.html");
+        changeNewsMsg("NEWS","A new update for Windows XP Gui Test has been released after almost a year of no updates","./updates/index.html");
     }, 10000);
     setTimeout(() => {
-        changeNewsMsg("NEWS","XBOX 360 Gui Test has been discontinued","../xbox360/index.html");
+        changeNewsMsg("NEWS","iOS 6 is still dead","../ios6/index.html");
     }, 15000);
     setTimeout(() => {
-        changeNewsMsg("NEWS","Thomas actually did something for this website","#");
+        changeNewsMsg("NEWS","XBOX 360 Gui Test has been discontinued","../xbox360/index.html");
     }, 20000);
     setTimeout(() => {
-        changeNewsMsg("NEWS","I'm out of funny messages, so this will loop","#");
+        changeNewsMsg("NEWS","Thomas actually did something for this website","#");
     }, 25000);
     setTimeout(() => {
-        newsLoop(); // restart the loop
+        changeNewsMsg("NEWS","I'm out of funny messages, so this will loop","#");
     }, 30000);
+    setTimeout(() => {
+        newsLoop(); // restart the loop
+    }, 35000);
 }
 
 window.addEventListener('load', function () {
