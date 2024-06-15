@@ -12,7 +12,7 @@ function newsLoop() {
         changeNewsMsg("NEWS","Windows XP Gui Test was accidently set to 17+, whoops.","#");
     }, 5000);
     setTimeout(() => {
-        changeNewsMsg("NEWS","iOS 6 finally gets its own page","../ios6/index.html");
+        changeNewsMsg("NEWS","iOS 6 finally gets its own page","../ios6/roblox/index.html");
     }, 10000);
     setTimeout(() => {
         changeNewsMsg("NEWS","Windows XP Gui Test is now 3 years old","#");
@@ -21,7 +21,7 @@ function newsLoop() {
         changeNewsMsg("NEWS","A new update for Windows XP Gui Test has been released after almost a year of no updates","./updates/index.html");
     }, 20000);
     setTimeout(() => {
-        changeNewsMsg("NEWS","iOS 6 is still dead","../ios6/index.html");
+        changeNewsMsg("NEWS","iOS 6 is still dead","../ios6/roblox/index.html");
     }, 25000);
     setTimeout(() => {
         changeNewsMsg("NEWS","XBOX 360 Gui Test has been discontinued","../xbox360/index.html");
