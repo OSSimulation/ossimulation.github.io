@@ -7,12 +7,12 @@ function changeNewsMsg(newsTitl,newsSubTitl,link) {
     newsSubTitle.setAttribute("href",link); // set the link
 }
 function newsLoop() {
-    changeNewsMsg("NEWS","Try out the new OS Menu!","https://www.roblox.com/games/18140408049");
+    changeNewsMsg("NEWS","Try out the new OS Menu","https://www.roblox.com/games/18140408049");
     setTimeout(() => {
         changeNewsMsg("NEWS","Windows RT Gui Test has been released","https://www.roblox.com/games/17420222147");
     }, 5000);
     setTimeout(() => {
-        changeNewsMsg("NEWS","Windows XP Gui Test was accidently set to 17+, whoops.","#");
+        changeNewsMsg("NEWS","Windows XP Gui Test was accidently set to 17+, whoops","#");
     }, 10000);
     setTimeout(() => {
         changeNewsMsg("NEWS","iOS 6 finally gets its own page","../ios6/roblox/index.html");
