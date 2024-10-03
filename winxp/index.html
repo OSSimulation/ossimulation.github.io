@@ -1,303 +1,72 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>Windows XP Gui Test</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-16">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="../main.css">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <meta content="Windows XP Gui Test - The OS Simulation Project" property="og:title">
     <meta
         content="The OS Simulation Project is a project where we make Unity apps that simulate discontinued operating systems, while trying to be as accurate to the original operating system as possible. The Roblox experiences we used to make are now discontinued and are no longer being updated."
         property="og:description">
-    <meta content="https://os.thomasluigi07.com/winxp" property="og:url">
-    <meta content="../windowsxpguitest_lowres.png" property="og:image">
-    <meta content="#2680ba" data-react-helmet="true" name="theme-color">
+    <meta content="https://os.thomasluigi07.com/xbox360" property="og:url">
+    <meta content="https://os.thomasluigi07.com/THEOSSIMULATIONPROJECT_LOWRES.png" property="og:image">
+    <meta content="#34363e" data-react-helmet="true" name="theme-color">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="manifest" href="/manifest.json">
     <link rel="apple-touch-icon" href="/os.png" />
-    <script type="text/javascript"
-        src="Library.js"> </script>
-    <script type="text/javascript"
-        src="news.js"> </script>
-    <script type="text/javascript"
-        src="../buttonProtector.js"> </script>
 </head>
 
 <body>
     <audio id="sfx_deny">
         <source src="../btn_InactiveFocus.wav" type="audio/wav">
     </audio>
+    <audio id="sfx_kick"><source src="../kick.wav" type="audio/wav"></audio>
     <audio id="sfx_move">
         <source src="../vk_Focus.wav" type="audio/wav">
     </audio>
     <audio id="sfx_ok">
         <source src="../vk_Select.wav" type="audio/wav">
     </audio>
-    <audio id="sfx_kick">
-        <source src="../kick.wav" type="audio/wav">
-    </audio>
-    <div id="page">
-        <div id="pageC"><a name="top" style="position:absolute">&nbsp;</a>
-            <div class="header"><span class="leftAlign"><a href="#" class="headerLink"></a></span><span
-                    class="rightAlign"><a
-                        class="headerLink"
-                        href="../index.html" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
-                        onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();">The OS Simulation Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
-                        class="headerLink"
-                        href="../ios6/index.html" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
-                        onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();">iOS 6</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
-                        class="headerLink"
-                        href="../xbox360/index.html" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
-                        onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();">XBOX 360 Gui Test</a></span>
-            </div>
-            <div id="masterNav">
-                <div id="masterNavTitle" class="png">&nbsp;</div>
-                <div id="masterNavBody">
-                    <h1 class="active" tabindex="0"
-                        onclick="if (!KP(event)){navH1Click(event);return true;}else{return event;};">
-                        <div class="arrow">&nbsp;</div>
-                        <div class="topNavText">Sitemap</div>
-                    </h1>
-                    <div id="masterNavLinks">
-                        <div class="container">
-                            <a onclick="invalidCounter();" href="#" class="link activeNav">Windows XP Gui Test Home</a>
-                            <a href="./updates/index.html" class="">Latest Build Info</a>
-                            <a href="./updates/old.html" class="">Previous Build Info</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="masterNavFooter" class="png">&nbsp;</div>
-            </div>
-            <div id="masterNavScreen" style="height: 1017px;">&nbsp;</div>
-            <div id="main">
-                <div class="siteBranding"><img alt="Windows XP Gui Test" width="350" height="60"
-                        src="./windowsxpguitest_horizontal.png"></div>
-                        <div class="featureArea a"><div class="a1"><a
-                                            href="https://www.roblox.com/games/start?placeid=17421629025"><img
-                                                src="./winxp_thumb.png"
-                                                alt="Windows XP Gui Test" height="325" width="690"></a></div>
-                        </div>
-                <!--
-                <div class="featureArea j">
-                    <div class="j1"><a
-                            href="https://www.roblox.com/games/start?placeid=17421629025"><img
-                                src="./scone.png"
-                                alt="dummy" height="325" width="480"></a></div>
-                    <div class="j2"><a
-                            href="https://www.roblox.com/games/start?placeid=17421629025"><img
-                                src="./yeah.png"
-                                alt="dummy" height="115" width="205"></a></div>
-                    <div class="j3"><a
-                            href="https://www.roblox.com/games/start?placeid=17421629025"><img
-                                src="./dude.png"
-                                alt="dummy" height="205" width="205"></a></div>
-                </div>
-                -->
-                <div class="newsHeadline">
-                    <div class="container"><span id="newsTitle" class="title">NEWS</span><a id="newsSubTitle"
-                            href="https://www.roblox.com/games/18140408049">Try out the new OS Menu</a></div>
-                </div>
-                <div class="verticalTabs">
-                    <div class="tabs ulTabs" style="display: block;">
-                        <ul>
-                            <li class="tab tabActive" id="tbh0_0" tabindex="0" onmouseover="activateTab(0,0)"
-                                onmouseout="mouseOutTab(0,0)" onfocus="KPF='activateTab(0,0)';"
-                                onkeydown="return KP(event);">Highlights</li>
-                            <!--
-                            <li class="tab" id="tbh0_2" tabindex="0" onmouseover="activateTab(0,2)"
-                                onmouseout="mouseOutTab(0,2)" onfocus="KPF='activateTab(0,2)';"
-                                onkeydown="return KP(event);">Using Windows XP Gui Test</li>
-                            -->
-                            <li class="tab" id="tbh0_5" tabindex="0" onmouseover="activateTab(0,5)"
-                                onmouseout="mouseOutTab(0,5)" onfocus="KPF='activateTab(0,5)';"
-                                onkeydown="return KP(event);">For Developers</li>
-                            <li>&nbsp;</li>
-                        </ul>
-                    </div>
-                    <div class="tabs dlTabs" style="display: none;">
-                        <h5>On This Page</h5>
-                        <p><a href="#Highlights">Highlights</a></p>
-                        <p><a href="#Using+your+computer">Using Windows XP</a></p>
-                        <p><a href="#For+Developers">For Developers</a></p>
-                    </div>
-                    <div class="tabContentPanel" style="height: 443px;">
-                        <div class="tbc">
-                            <h3 class="dlh" style="display: none;">Highlights<a name="Highlights">&nbsp;</a></h3>
-                            <div class="tabPanel tabActivePanel" id="tbc0_0">
-                                <div class="headline image">
-                                    <div style="position:absolute">
-                                        <div class="imgBorder" title=""><a
-                                                style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./os.png');"
-                                                href=""><img
-                                                    src="./os.png" alt="" height="" width=""></a></div>
-                                    </div><a
-                                        href="./updates/index.html">September OS Menu updates</a><br>
-                                    <div class="desc">An important update has been made for the OS Menu
-                                    </div>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li class="desc"><a
-                                                href="https://www.roblox.com/games/start?placeid=17421629025"
-                                                >Play Windows XP Gui
-                                                Test</a><br><span>Visit Windows XP Gui Test on
-                                                Roblox to try out Windows XP... in Roblox. It's FREE!</span></li>
-                                        <li class="desc"><a
-                                                href="./updates/old.html"
-                                                >See how Windows XP Gui Test has
-                                                changed</a><br><span>Have a look at all of the additions, removals and changes for
-                                                Windows XP Gui Test</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="dlTabSpacer" style="display: none;"><a href="#top">^ Top of page</a></div>
-                        </div>
-                        <!--
-                        <div class="tbc">
-                            <h3 class="dlh" style="display: none;">Using Windows XP<a
-                                    name="Using+Windows+XP">&nbsp;</a></h3>
-                            <div class="tabPanel tabHiddenPanel" id="tbc0_2">
-                                <div class="z1">
-                                    <div class="heading">At Home</div>
-                                    <div class="headline image">
-                                        <div style="position:absolute">
-                                            <div class="imgBorder"
-                                                title="Introducing Windows Media Center in Windows Vista"><a
-                                                    style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./winxp.png');"
-                                                    href="https://web.archive.org/web/20070216170325/http://www.microsoft.com/windows/products/windowsvista/features/details/mediacenter.mspx"><img
-                                                        src="./winxp.png"
-                                                        alt="Windows XP, simulated"
-                                                        height="" width=""></a></div>
-                                        </div><a
-                                            href="https://web.archive.org/web/20070216170325/http://www.microsoft.com/windows/products/windowsvista/features/details/mediacenter.mspx"
-                                            >Windows XP, simulated</a><br>
-                                        <div class="desc">Enjoy Windows XP... simulated in Roblox
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <ul>
-                                            <li class="desc"><a
-                                                    href="https://web.archive.org/web/20070216170325/http://clk.atdmt.com/GBL/go/mcrsswsa0030000051gbl/direct/01/"
-                                                    >User's Manual</a><br><span>Don't
-                                                    know how to use the simulator? The manual lists everything about
-                                                    this game and how to use it.</span>
-                                            </li>
-                                            <li class="desc"><a
-                                                    href="https://web.archive.org/web/20070216170325/http://www.windowsmedia.com/MediaGuide/Home"
-                                                    >Roblox Messenger Quick Start
-                                                    Guide</a><br><span>Don't know how to use Roblox Messenger? This
-                                                    quick start guide will explain how to use it</span></li>
-                                            <li class="desc"><a
-                                                    href="https://web.archive.org/web/20070216170325/http://clk.atdmt.com/GBL/go/mcrsswlm0060000022gbl/direct/01/"
-                                                    >Windows XP Gui Test on
-                                                    Playstation and XBOX</a><br><span></span></li>
-                                            <li class="desc"><a
-                                                    href="https://web.archive.org/web/20070216170325/http://maps.live.com/?wip=51"
-                                                    >Windows XP Gui Test in
-                                                    VR</a><br><span></span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="z2">
-                                    <div class="heading">On the Go</div>
-                                    <div class="headline image">
-                                        <div style="position:absolute">
-                                            <div class="imgBorder" title="iPhone 4s"><a
-                                                    style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./iphone4s.png');"
-                                                    href="https://web.archive.org/web/20070216170325/http://clk.atdmt.com/MRT/go/mcrsspcu0020000749mrt/direct/01"><img
-                                                        src="./iphone4s.png"
-                                                        alt="iPhone 4s" height="" width=""></a>
-                                            </div>
-                                        </div><a
-                                            href="https://web.archive.org/web/20070216170325/http://clk.atdmt.com/MRT/go/mcrsspcu0020000749mrt/direct/01"
-                                            >Windows XP, now mobile</a><br>
-                                        <div class="desc">See how your mobile device can run Windows XP Gui Test,
-                                            at the palm of your hand</div>
-                                    </div>
-                                    <div>
-                                        <ul>
-                                            <li class="desc"><a
-                                                    href="https://web.archive.org/web/20070216170325/http://office.microsoft.com/en-us/results.aspx?qu=2007+calendar"
-                                                    >Full desktop experience, on the
-                                                    go</a><br><span>If your device supports it, you can make your tablet
-                                                    or even phone into a portable Windows XP computer with a mouse and
-                                                    keyboard</span></li>
-                                            <li class="desc"><a
-                                                    href="https://web.archive.org/web/20070216170325/http://www.microsoft.com/windows/products/windowsvista/features/productivity.mspx"
-                                                    >Small screens, no
-                                                    problem</a><br><span>See how Windows XP Gui Test supports all kinds of
-                                                    screen resolutions, even the iPhone 4S's screen size</span></li>
-                                            <li class="desc"><a
-                                                    href="https://web.archive.org/web/20070216170325/http://www.microsoft.com/learning/office2007/iworker/default.mspx"
-                                                    >placeholder</a><br><span></span>
-                                            </li>
-                                            <li class="desc"><a
-                                                    href="https://web.archive.org/web/20070216170325/http://www.microsoft.com/office/greattips/2007tips/default.mspx"
-                                                    >placeholder</a><br><span></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="dlTabSpacer" style="display: none;"><a href="#top">^ Top of page</a></div>
-                        </div>
-                        -->
-                        <div class="tbc">
-                            <h3 class="dlh" style="display: none;">For Developers<a name="For+Developers">&nbsp;</a>
-                            </h3>
-                            <div class="tabPanel tabHiddenPanel" id="tbc0_5">
-                                <div class="headline image">
-                                    <div style="position:absolute">
-                                        <div class="imgBorder" title="Try Visual Studio 2005 for free"><a
-                                                style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./RobloxStudio.png');"
-                                                href="https://www.roblox.com/games/17421629025"><img
-                                                    src="./RobloxStudio.png" alt="Make your own Windows XP Gui Test"
-                                                    height="" width=""></a>
-                                        </div>
-                                    </div><a
-                                        href="https://www.roblox.com/games/17421629025"
-                                        >Make your own Windows XP Gui Test</a><br>
-                                    <div class="desc">Windows XP Gui Test is now uncopylocked, meaning you... yes you,
-                                        can now make your own version of the simulator! You can do anything! (PC/Mac required)
-                                    </div>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li class="desc"><a
-                                                href="https://github.com/OSSimulation/Resources"
-                                                >Resources</a><br><span>Asset
-                                                downloads for Windows XP Gui Test that may be required for making your own version of
-                                                the simulator.</span></li>
-                                        <li class="desc"><a
-                                                href="https://www.roblox.com/games/9278183059"
-                                                >Windows XP Gui Test 2.0 Test
-                                                Place</a><br><span>An unreleased version of Windows XP Gui Test that was
-                                                intended to be completley merged with the game for the 2.0 update</span>
-                                        </li>
-                                        <li class="desc"><a
-                                                href="https://www.roblox.com/games/12985815257"
-                                                >Windows XP Gui Test 2.0 Beta
-                                                3</a><br><span>An unfinished update for Windows XP Gui Test, that
-                                                includes a very broken Roblox and an unfinished Half-Life</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="dlTabSpacer" style="display: none;"><a href="#top">^ Top of page</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <p>Windows XP and it's related logos are owned by Microsoft Corporation. We are not affiliated with Microsoft, and don't have a license.</p>
-                <p><a href="https://github.com/OSSimulation">GitHub</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
-                        href="https://roblox.com/my/groups.aspx?gid=14298372">Roblox Group</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
-                        href="https://youtube.com/@OSSimulation">YouTube</a></p>
-            </div>
-            <script type="text/javascript">try { collapseTabs() } catch (e) { }</script>
+    <a class="logo"
+        onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
+        onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();"
+        href="../index.html"><img src="../THEOSSIMULATIONPROJECT_LOWRES.png"></a>
+    <div class="navbar">
+        <div class="container">
+            <a class="winxp"
+                onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
+                onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();"
+                href="../winxp/index.html"><img src="../windowsxpguitest_horizontal.png  "></a>
+            <a class="ios"
+                onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
+                onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();"
+                href="../ios6/index.html"><img src="../ios6logo_whitelowres.png"></a>
+            <a class="xbox"
+                onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
+                onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();"
+                href="../xbox360/index.html"><img src="../xbox360guitesthorizontal_lowres.png"></a>
         </div>
     </div>
+    <div class="content">
+        <div class="contentcontainer">
+            <p>RIP Windows XP Gui Test 2021-2024</p>
+            <br />
+            <p>On the 4th of October, 2024 at 04:10 AEST, Xbox 360 Gui Test was taken down by Microsoft Corporation.</p>
+            <p>Because of this, Windows XP Gui Test was also taken down voluntarily.</p>
+            <br />
+            <video poster="./poster.png" playsinline style="width: 100%;" autoplay muted src="./deathofxp.mp4"><img src="./poster.png" alt="An image of a grave with the text 'XBOX 360 Gui Test IS HERE' on it."></video>
+            <br />
+            <br />
+            <p>You may view the archived page <a href="./old/index.html">here.</a></p>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://github.com/OSSimulation">GitHub</a>
+        <a href="https://www.roblox.com/my/groups.aspx?gid=14298372">Roblox Group</a>
+        <a href="https://youtube.com/youtube.com/@OSSimulation">YouTube</a>
+    </div>
 </body>
+
 </html>
