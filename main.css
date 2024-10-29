@@ -16,6 +16,18 @@
     margin: 0px;
 }
 
+.content a {
+    color: rgb(29, 134, 255);
+}
+
+.content a:active,.content   a:hover,.content  a:focus,.content  a:focus-visible,.content  a:focus-within,.content  a:target {
+    color: rgb(28, 105, 192);
+}
+
+.content a:visited {
+    color: rgb(219, 100, 255);
+}
+
 html {
     background-image: url(./tile.png);
     background-color: #34363e;
