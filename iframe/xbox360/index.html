@@ -33,17 +33,20 @@
     <div id="right" class="fin_right"></div>
     <a id="backbtn" class="invisible" target="_parent" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_cancel').currentTime=0; document.getElementById('sfx_cancel').play(); document.getElementById('ytpreview').className = 'invisible'; document.getElementById('backbtn').className = 'invisible'"><button>Back</button></a>
     <script>
-        // This is for older browsers. Usually if this errors this means the JS won't work on this page.
-        // Thus, we can hopefully reset the classes for newer browsers. 
-        // After all, we don't want people to be unable to see text...
-        document.getElementById('sfx_move').play(); 
-        
-        // Reset interactive frame to default
-        document.getElementById("hider").className = "notif"
-        document.getElementById("left").className = "l_eft"
-        document.getElementById("center").className = "invisible"
-        document.getElementById("right").className = "r_ight"
-        document.getElementById("bottomdiv").className = "bottomdiv"
+        function check() {
+            try {
+                var ThisIsNotUsedLmao = window.crossOriginIsolated
+            }
+            catch {
+                return
+            }
+            document.getElementById("hider").className = "notif"
+            document.getElementById("left").className = "l_eft"
+            document.getElementById("center").className = "invisible"
+            document.getElementById("right").className = "r_ight"
+            document.getElementById("bottomdiv").className = "bottomdiv"
+        }
+        check();
     </script>
     <iframe id="ytpreview" class="invisible" src="https://www.youtube.com/embed/jtwMSy-8LqM"></iframe>
 </body>
