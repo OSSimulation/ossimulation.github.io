@@ -25,8 +25,9 @@
                 <p>It's no longer in development, and will not be finished.</p>
                 <p>If you still want to see a preview of the game, press the "Watch Preview" button!</p>
             </div>
-            <div id="bottomdiv" class="invisible">
-                <a target="_parent" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play(); document.getElementById('ytpreview').className = 'preview'; document.getElementById('backbtn').className = 'backbtn'"><button>Watch Preview</button></a>
+            <div class="bottomdiv">
+                <a id="ytlinkbtn" target="_blank" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" href="https://www.youtube.com/watch?v=jtwMSy-8LqM"><button>Watch Preview</button></a>
+                <a id="ytembedbtn" class="invisible" target="_parent" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play(); document.getElementById('ytpreview').className = 'preview'; document.getElementById('backbtn').className = 'backbtn'"><button>Watch Preview</button></a>
             </div>
         </div>
     </div>
@@ -44,7 +45,8 @@
             document.getElementById("left").className = "l_eft"
             document.getElementById("center").className = "invisible"
             document.getElementById("right").className = "r_ight"
-            document.getElementById("bottomdiv").className = "bottomdiv"
+            document.getElementById("ytembedbtn").className = ""
+            document.getElementById("ytlinkbtn").className = "invisible"
         }
         check();
     </script>
