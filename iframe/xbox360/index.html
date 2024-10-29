@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="./360.css">
 </head>
 <body class="default">
-    <button id="hider" class="notif" onclick='document.getElementById("sfx_bladeopen").currentTime=0; document.getElementById("sfx_bladeopen").play(); document.getElementById("hider").className = "invisible"; document.getElementById("left").className = "left"; document.getElementById("right").className = "right"; setTimeout(function() {document.getElementById("center").className = "container"; document.getElementById("left").className = "fin_left"; document.getElementById("right").className = "fin_right";}, 700);'> 
+    <button id="hider" class="invisible" onclick='document.getElementById("sfx_bladeopen").currentTime=0; document.getElementById("sfx_bladeopen").play(); document.getElementById("hider").className = "invisible"; document.getElementById("left").className = "left"; document.getElementById("right").className = "right"; setTimeout(function() {document.getElementById("center").className = "container"; document.getElementById("left").className = "fin_left"; document.getElementById("right").className = "fin_right";}, 700);'> 
        <div class="preview_left"></div>
         Play
        <div class="preview_right"></div>
@@ -14,9 +14,9 @@
     <audio id="sfx_deny"><source src="deny.wav" type="audio/wav"></audio>
     <audio id="sfx_move"><source src="move.wav" type="audio/wav"></audio>
     <audio id="sfx_ok"><source src="select.wav" type="audio/wav"></audio>
-    <div id="left" class="l_eft"></div>
+    <div id="left" class="fin_left"></div>
     <div class="center">
-        <div id="center" class="invisible">
+        <div id="center" class="container">
             <div class="topdiv">
                 <img src="X360GuiTest_LowRes.png">
             </div>
@@ -25,12 +25,25 @@
                 <p>It's no longer in development, and will not be finished.</p>
                 <p>If you still want to see a preview of the game, press the "Watch Preview" button!</p>
             </div>
-            <div class="bottomdiv">
+            <div id="bottomdiv" class="invisible">
                 <a target="_parent" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play(); document.getElementById('ytpreview').className = 'preview'; document.getElementById('backbtn').className = 'backbtn'"><button>Watch Preview</button></a>
             </div>
         </div>
     </div>
-    <div id="right" class="r_ight"></div>
+    <div id="right" class="fin_right"></div>
     <a id="backbtn" class="invisible" target="_parent" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_cancel').currentTime=0; document.getElementById('sfx_cancel').play(); document.getElementById('ytpreview').className = 'invisible'; document.getElementById('backbtn').className = 'invisible'"><button>Back</button></a>
+    <script>
+        // This is for older browsers. Usually if this errors this means the JS won't work on this page.
+        // Thus, we can hopefully reset the classes for newer browsers. 
+        // After all, we don't want people to be unable to see text...
+        document.getElementById('sfx_move').play(); 
+        
+        // Reset interactive frame to default
+        document.getElementById("hider").className = "notif"
+        document.getElementById("left").className = "l_eft"
+        document.getElementById("center").className = "invisible"
+        document.getElementById("right").className = "r_ight"
+        document.getElementById("bottomdiv").className = "bottomdiv"
+    </script>
     <iframe id="ytpreview" class="invisible" src="https://www.youtube.com/embed/jtwMSy-8LqM"></iframe>
 </body>
