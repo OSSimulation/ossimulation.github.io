@@ -28,6 +28,10 @@
     color: rgb(219, 100, 255);
 }
 
+.content a:visited:active,.content   a:visited:hover,.content  a:visited:focus,.content  a:visited:focus-visible,.content  a:visited:focus-within,.content  a:visited:target {
+    color: rgb(208, 52, 255);
+}
+
 html {
     background-image: url(./tile.png);
     background-color: #34363e;
