@@ -2,9 +2,10 @@
 <head>
     <title>360</title>
     <link rel="stylesheet" href="./360.css">
+    <script type="text/javascript" src="./360.js"> </script>
 </head>
 <body class="default">
-    <button id="hider" class="invisible" onclick='document.getElementById("sfx_bladeopen").currentTime=0; document.getElementById("sfx_bladeopen").play(); document.getElementById("hider").className = "invisible"; document.getElementById("left").className = "left"; document.getElementById("right").className = "right"; setTimeout(function() {document.getElementById("center").className = "container"; document.getElementById("left").className = "fin_left"; document.getElementById("right").className = "fin_right";}, 700);'> 
+    <button id="hider" class="invisible" onclick='hider();'> 
        <div class="preview_left"></div>
         Play
        <div class="preview_right"></div>
@@ -14,6 +15,8 @@
     <audio id="sfx_deny"><source src="deny.wav" type="audio/wav"></audio>
     <audio id="sfx_move"><source src="move.wav" type="audio/wav"></audio>
     <audio id="sfx_ok"><source src="select.wav" type="audio/wav"></audio>
+    <audio id="sfx_HUDopen"><source src="HUD_open.wav" type="audio/wav"></audio>
+    <audio id="sfx_HUDclose"><source src="HUD_close.wav" type="audio/wav"></audio>
     <div id="left" class="fin_left"></div>
     <div class="center">
         <div id="center" class="container">
@@ -26,29 +29,15 @@
                 <p>If you still want to see a preview of the game, press the "Watch Preview" button!</p>
             </div>
             <div class="bottomdiv">
-                <a id="ytlinkbtn" target="_blank" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" href="https://www.youtube.com/watch?v=jtwMSy-8LqM"><button>Watch Preview</button></a>
-                <a id="ytembedbtn" class="invisible" target="_parent" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play(); document.getElementById('ytpreview').className = 'preview'; document.getElementById('backbtn').className = 'backbtn'"><button>Watch Preview</button></a>
+                <a id="ytlinkbtn" target="_blank" onmouseenter="movesound()" onclick="selectsound()" href="https://www.youtube.com/watch?v=jtwMSy-8LqM"><button>Watch Preview</button></a>
+                <a id="ytembedbtn" class="invisible" target="_parent" onmouseenter="movesound()" onclick="hudopen()"><button>Watch Preview</button></a>
             </div>
         </div>
     </div>
     <div id="right" class="fin_right"></div>
-    <a id="backbtn" class="invisible" target="_parent" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_cancel').currentTime=0; document.getElementById('sfx_cancel').play(); document.getElementById('ytpreview').className = 'invisible'; document.getElementById('backbtn').className = 'invisible'"><button>GO BACK</button></a>
-    <script>
-        function check() {
-            try {
-                var ThisIsNotUsedLmao = window.crossOriginIsolated
-            }
-            catch {
-                return
-            }
-            document.getElementById("hider").className = "notif"
-            document.getElementById("left").className = "l_eft"
-            document.getElementById("center").className = "invisible"
-            document.getElementById("right").className = "r_ight"
-            document.getElementById("ytembedbtn").className = ""
-            document.getElementById("ytlinkbtn").className = "invisible"
-        }
-        check();
-    </script>
+    <h1 id="hudtitle" class="invisible">Preview</h1>
+    <img id="hudbg" src="HUD_BG.png" class="invisible">
+    <img id="hud" src="HUD.png" class="invisible">
+    <a id="backbtn" class="invisible" target="_parent" onmouseenter="movesound()" onclick="hudclose()"><button>GO BACK</button></a>
     <iframe id="ytpreview" class="invisible" src="https://www.youtube.com/embed/jtwMSy-8LqM"></iframe>
 </body>

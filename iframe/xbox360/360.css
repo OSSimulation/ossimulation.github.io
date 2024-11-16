@@ -18,6 +18,26 @@
     }
 }
 
+@keyframes hudin {
+    from {
+        left: -75%
+    }
+
+    to {
+        left: 0px
+    }
+}
+
+@keyframes hudout {
+    from {
+        left: 0px
+    }
+
+    to {
+        left: -75%
+    }
+}
+
 iframe {
     position: fixed;
     left: 0px;
@@ -28,6 +48,11 @@ iframe {
 
 .preview {
     z-index: 1000000 !important;
+    position: fixed;
+    left: 2.5%;
+    width: 64%;
+    height: 64%;
+    top: 14%;
 }
 
 .backbtn {
@@ -278,13 +303,14 @@ iframe {
     border-color: #4f4f4f;
     border-radius: 5px;
     border-width: 2px;
-    width: 70px;
-    height: 30px;
-    top: 10px;
-    left: 10px;
+    width: 9%;
+    height: 7%;
+    top: 82%;
+    left: 2.5%;
     position: fixed;
     color: white;
     font-weight: bold;
+    font-size: 90%;
 }
 
 .backbtn button:active, .backbtn button:focus, .backbtn button:hover {
@@ -296,4 +322,56 @@ iframe {
     padding: 0;
     margin: 0;
     border: none;
+}
+
+.hudin {
+    width: 75%;
+    height: 100%;
+    top: 0px;
+    left: -75%;
+    position: fixed;
+    z-index: 11;
+    animation-name: hudin;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+}
+
+.hud {
+    width: 75%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 11;
+}
+
+.hudout {
+    width: 75%;
+    height: 100%;
+    top: 0px;
+    left: -75px;
+    position: fixed;
+    z-index: 11;
+    animation-name: hudout;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+}
+
+.hudbg {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 10;
+}
+
+.hudtitle {
+    top: 5%;
+    left: 2.5%;
+    position: fixed;
+    z-index: 12;
+    font-weight: normal;
+    color: white;
+    font-size: 150%;
 }
