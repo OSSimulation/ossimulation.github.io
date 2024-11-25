@@ -1,0 +1,370 @@
+@keyframes hudin {
+    from {
+        width: 0%;
+        height: 0%;
+        margin-top: 42%;
+        margin-bottom: 42%;
+    }
+
+    to {
+        width: 65%;
+        height: 50%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+}
+
+@keyframes hudin_popup {
+    from {
+        width: 0%;
+        height: 0%;
+        margin-top: 42%;
+        margin-bottom: 42%;
+    }
+
+    to {
+        width: 50%;
+        height: 80%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+}
+
+@keyframes hudin_large {
+    from {
+        width: 0%;
+        height: 0%;
+        margin-top: 42%;
+        margin-bottom: 42%;
+    }
+
+    to {
+        width: 80%;
+        height: 80%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+}
+
+
+@keyframes hudpopup {
+    from {
+        width: 65%;
+        height: 50%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    to {
+        width: 50%;
+        height: 80%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+}
+
+@keyframes hudlarge {
+    from {
+        width: 65%;
+        height: 50%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    to {
+        width: 80%;
+        height: 80%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+}
+
+@keyframes hudout {
+    from {
+        width: 65%;
+        height: 50%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    to {
+        width: 0%;
+        height: 0%;
+        margin-top: 42%;
+        margin-bottom: 42%;
+    }
+}
+
+@keyframes hudout_popup {
+    from {
+        width: 50%;
+        height: 80%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    to {
+        width: 0%;
+        height: 0%;
+        margin-top: 42%;
+        margin-bottom: 42%;
+    }
+}
+
+@keyframes hudout_large {
+    from {
+        width: 80%;
+        height: 80%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    to {
+        width: 0%;
+        height: 0%;
+        margin-top: 42%;
+        margin-bottom: 42%;
+    }
+}
+
+iframe {
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -10000;
+}
+
+.preview {
+    z-index: 1000000 !important;
+    position: fixed;
+    left: 2.5%;
+    width: 64%;
+    height: 64%;
+    top: 14%;
+}
+
+.backbtn {
+    position: fixed;
+    z-index: 10000001 !important;
+}
+
+@keyframes button {
+    from {
+        box-shadow: none;
+    }
+
+    to {
+        box-shadow: #00000070 0px 4px 7px 1px;
+    }
+}
+
+@keyframes buttonfadeout {
+    from {
+        box-shadow: #00000070 0px 4px 7px 1px;
+    }
+
+    to {
+        box-shadow: none;
+    }
+}
+
+* {
+    font-family: "Convection UI";
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "Convection UI";
+    src: url("Convmd.ttf");
+}
+
+.notif {
+    position: fixed;
+    font-size: 30px;
+    width: 100%;
+    border: none;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(16, 118, 201);
+    cursor: pointer;
+}
+
+html,body {
+    background-color: rgb(16, 118, 201);
+}
+
+.invisible, .invisible button {
+    display: none;
+    width: 0px;
+    height: 0px;
+}
+
+.container {
+    position: fixed;
+    width: 69%;
+    height: 100%;
+}
+
+.backbtn button {
+    background: linear-gradient(180deg, #464646 0%, #1c1c1c 30%, #000 100%);
+    background-color: #1c1c1c;
+    border-style: solid;
+    border-color: #4f4f4f;
+    border-radius: 5px;
+    border-width: 2px;
+    width: 9%;
+    height: 7%;
+    top: 82%;
+    left: 2.5%;
+    position: fixed;
+    color: white;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.backbtn button:active, .backbtn button:focus, .backbtn button:hover {
+    background: linear-gradient(180deg, #707070 0%, #494949 30%, #202020 100%);
+    background-color: #494949;
+    cursor: pointer;
+}
+
+.hudaspect {
+    width: auto;
+    height: 100%;
+    aspect-ratio: 5/4;
+    z-index: 11;
+    margin: auto;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+}
+
+.hudin {
+    background-color: #293b57;
+    width: 0%;
+    height: 0%;
+    margin: auto;
+    margin-top: 42%;
+    margin-bottom: 42%;
+    animation-name: hudin;
+    animation-timing-function: cubic-bezier(.18,.89,.32,1.28);
+    animation-duration: 0.2s;
+    border-radius: 1.5%/2.5%;
+}
+
+.hudin_popup {
+    background-color: #293b57;
+    width: 0%;
+    height: 0%;
+    margin: auto;
+    margin-top: 42%;
+    margin-bottom: 42%;
+    animation-name: hudin_popup;
+    animation-timing-function: cubic-bezier(.18,.89,.32,1.28);
+    animation-duration: 0.2s;
+    border-radius: 1.5%/2.5%;
+}
+
+.hudin_large {
+    background-color: #293b57;
+    width: 0%;
+    height: 0%;
+    margin: auto;
+    margin-top: 42%;
+    margin-bottom: 42%;
+    animation-name: hudin_large;
+    animation-timing-function: cubic-bezier(.18,.89,.32,1.28);
+    animation-duration: 0.2s;
+    border-radius: 1.5%/2.5%;
+}
+
+.hud {
+    background-color: #293b57;
+    width: 65%;
+    height: 50%;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    border-radius: 1.5%/2.5%;
+}
+
+.hud_popup {
+    background-color: #293b57;
+    width: 50%;
+    height: 80%;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    border-radius: 1.5%/2.5%;
+}
+
+.hud_large {
+    background-color: #293b57;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    border-radius: 1.5%/2.5%;
+}
+
+.hudout {
+    background-color: #293b57;
+    width: 0%;
+    height: 0%;
+    margin: auto;
+    margin-top: 42%;
+    margin-bottom: 42%;
+    animation-name: hudout;
+    animation-timing-function: cubic-bezier(.6,-0.28,.74,.05);
+    animation-duration: 0.2s;
+    border-radius: 1.5%/2.5%;
+}
+
+.hudout_popup {
+    background-color: #293b57;
+    width: 0%;
+    height: 0%;
+    margin: auto;
+    margin-top: 42%;
+    margin-bottom: 42%;
+    animation-name: hudout_popup;
+    animation-timing-function: cubic-bezier(.6,-0.28,.74,.05);
+    animation-duration: 0.2s;
+    border-radius: 1.5%/2.5%;
+}
+
+.hudout_large {
+    background-color: #293b57;
+    width: 0%;
+    height: 0%;
+    margin: auto;
+    margin-top: 42%;
+    margin-bottom: 42%;
+    animation-name: hudout_large;
+    animation-timing-function: cubic-bezier(.6,-0.28,.74,.05);
+    animation-duration: 0.2s;
+    border-radius: 1.5%/2.5%;
+}
+
+.hudbg {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 10;
+}
+
+.hudtitle {
+    top: 5%;
+    left: 2.5%;
+    position: fixed;
+    z-index: 12;
+    font-weight: normal;
+    color: white;
+    font-size: 150%;
+}

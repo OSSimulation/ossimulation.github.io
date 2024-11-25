@@ -316,6 +316,7 @@ iframe {
 .backbtn button:active, .backbtn button:focus, .backbtn button:hover {
     background: linear-gradient(180deg, #707070 0%, #494949 30%, #202020 100%);
     background-color: #494949;
+    cursor: pointer;
 }
 
 iframe {
