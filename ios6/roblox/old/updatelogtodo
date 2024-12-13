@@ -29,12 +29,18 @@ Thomas
 14/04/2022, 15:39
 iOS 6 is still being worked on.
 
+Thomas
+ — 
+17/05/2022, 22:48
 @iOS 6 updates  (build 64)
 - IOS 6 IS BACK!
 - Added Test App (woah, you can actually open an app now!)
 (there's still not much, and a lot of bugs so please report them in 
 ⁠bug-reports-ios6-archive! Press F9 to see all errors/warnings.) 
 
+Thomas
+ — 
+18/05/2022, 19:35
 @iOS 6 updates (build 78)
 - the button in test app now changes which Page it is on
 - Added Carrier. To change the Carrier name, open the Test app, and change the box that has it there.
@@ -43,33 +49,53 @@ iOS 6 is still being worked on.
 - bug fixes
 - test app now has a proper icon 
 
+Thomas
+ — 
+28/05/2022, 14:25
 @iOS 6 updates  (build 85)
 - added WIP and DEVICE buttons from Windows XP Gui Test
 - enabled auto translation and text capture
 - removed carrier text changing
 - added Feedback app (non-functional at the moment)
 
-
+Thomas
+ — 
+29/05/2022, 19:25
 @iOS 6 updates (build 87)
 - Removed Feedback
 - Changed Size of Custom Topbar elements
 
+Thomas
+ — 
+30/05/2022, 14:15
 @iOS 6 updates (build 88)
 - Fixed Test App not launching
 
+Thomas
+ — 
+16/07/2022, 18:48
 @iOS 6 updates  (build 100)
 - Added Setup
 - Added cool new anims to the home button appearing thingy
 - Home button only appears after completing Setup
 - Fixed very minor bugs
 
+Thomas
+ — 
+18/07/2022, 22:04
 @iOS 6 updates  (build 106)
 - Added animation to the "slide to unlock" and "slide to set up" dialog to make it more accurate
 
+Thomas
+ — 
+28/09/2022, 12:46
 @iOS 6 updates (build 116,v1)
 - Added help text on how to use the sliders on PC
 - Bug fixes.
 
+Thomas
+ — 
+10/11/2022, 11:58
 @iOS 6 updates  (build 122) (sorry for repost, someone deleted the message)
 - The OS Menu has been added to iOS 6.
 - Roblox menu button has now been replaced with the OS Menu on Mobile and PC.
@@ -82,6 +108,9 @@ iOS 6 is still being worked on.
 - Added an animated border around the OS menu.
 - Fixed the OS Menu button being covered by the OS Menu
 
+Thomas
+ — 
+15/11/2022, 19:43
 @iOS 6 updates   (build 165)
 Wow, an actual update!
 - Added rounded corners to improve accuracy
@@ -98,3 +127,21 @@ Wow, an actual update!
 - Added text beneath loading icon
 - Made final setup page text way more accurate
 Fun Fact: This update took 8 hours to develop :LuigiBeingShot: 
+
+Thomas
+ — 
+16/11/2022, 15:21
+@iOS 6 updates (build 170)
+- Removed profile button from the main page of the OS Menu, you can still access your profile from the Players page
+- Added an "Invite Friends" button to the Players page
+- Re-organised buttons on the main page
+- Added the Friends page, where you can view all of your Roblox friends, and see if they are online, offline or in-game at a glance.
+
+Thomas
+ — 
+26/11/2022, 11:26
+@iOS 6 updates  (build 173)
+- Added the Achievement Page to the OS Menu, where you can see your badges in the games. (Since iOS 6 doesn't have any yet, there isn't any achievements to show there. they will be added soon)
+- Added an Achievement popup for when you get a badge in-game.
+- Re-added the Profile button to the OS Menu
+- Leave Game Button is no longer inside of a scrolling frame, and now can always be accessed even if the OS Menu is too small to show the Leave Game button without scrolling.
