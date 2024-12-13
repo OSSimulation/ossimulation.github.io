@@ -1,0 +1,100 @@
+Thomas
+ — 
+12/03/2022, 00:19
+@iOS 6 updates Fixed date and time for 12:00 AM
+
+Thomas
+ — 
+18/03/2022, 15:31
+@iOS 6 updates 
+Setup is being worked on
+
+Thomas
+ — 
+02/04/2022, 12:35
+@Windows XP Gui Test Publish Notifications  @iOS 6 updates 
+Changed game name and description back to normal.
+(WINXP ONLY) If it is still April 1st for you, the game will still have the text strings. 
+
+Thomas
+ — 
+12/04/2022, 13:18
+@iOS 6 updates 
+iOS 6 has been made private as
+- there is literally no functionality
+The game will come back later today when i work on it. 
+
+Thomas
+ — 
+14/04/2022, 15:39
+iOS 6 is still being worked on.
+
+@iOS 6 updates  (build 64)
+- IOS 6 IS BACK!
+- Added Test App (woah, you can actually open an app now!)
+(there's still not much, and a lot of bugs so please report them in 
+⁠bug-reports-ios6-archive! Press F9 to see all errors/warnings.) 
+
+@iOS 6 updates (build 78)
+- the button in test app now changes which Page it is on
+- Added Carrier. To change the Carrier name, open the Test app, and change the box that has it there.
+- Pressing the Power button while an app is open no longer closes the app
+- Fixed homescreen apps having a page 2 when there is no page 2
+- bug fixes
+- test app now has a proper icon 
+
+@iOS 6 updates  (build 85)
+- added WIP and DEVICE buttons from Windows XP Gui Test
+- enabled auto translation and text capture
+- removed carrier text changing
+- added Feedback app (non-functional at the moment)
+
+
+@iOS 6 updates (build 87)
+- Removed Feedback
+- Changed Size of Custom Topbar elements
+
+@iOS 6 updates (build 88)
+- Fixed Test App not launching
+
+@iOS 6 updates  (build 100)
+- Added Setup
+- Added cool new anims to the home button appearing thingy
+- Home button only appears after completing Setup
+- Fixed very minor bugs
+
+@iOS 6 updates  (build 106)
+- Added animation to the "slide to unlock" and "slide to set up" dialog to make it more accurate
+
+@iOS 6 updates (build 116,v1)
+- Added help text on how to use the sliders on PC
+- Bug fixes.
+
+@iOS 6 updates  (build 122) (sorry for repost, someone deleted the message)
+- The OS Menu has been added to iOS 6.
+- Roblox menu button has now been replaced with the OS Menu on Mobile and PC.
+- Added the "Other Games" button to the OS Menu, where you can join other games made by The OS Simulation Project.
+@iOS 6 updates   (build 128) (repost)
+- Added the ability to send friend requests, view player avatars and block players in the OS menu
+- When teleporting between games using the OS menu, a transition is added to make the process smooth.
+- Added the ability to see what device a player is on and if they have chat enabled
+- Added the ability to press ENTER on the OS menu when the Leave Game page is shown.
+- Added an animated border around the OS menu.
+- Fixed the OS Menu button being covered by the OS Menu
+
+@iOS 6 updates   (build 165)
+Wow, an actual update!
+- Added rounded corners to improve accuracy
+- StatusBar is now opaque during setup
+- StatusBar now correctly shows the time during setup
+- Added an (i) to the setup slider (does nothing for now)
+- Added scrolling text on the Language page of setup for accuracy
+- Language page now makes your language human readable (this took 3 hours to implement 😭)
+- Redesigned alert that pops up when switching pages
+- Country page now shows your country (this took 1 hour to implement :McLovin: )
+- Country page has a scrolling globe for accuracy
+- Fixed country or region text being way to freaking big
+- Added loading icon to activating device spinner
+- Added text beneath loading icon
+- Made final setup page text way more accurate
+Fun Fact: This update took 8 hours to develop :LuigiBeingShot: 
