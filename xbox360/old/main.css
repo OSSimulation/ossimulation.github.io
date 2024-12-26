@@ -17,6 +17,32 @@ body {
     padding: 0;
 }
 
+.osmenu {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    z-index: 99;
+}
+
+.osmenuclosed {
+    width: 1px;
+    height: 1px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    z-index: -99;
+}
+
 #XbcShell {
     position: relative;
     background-image: url(ImageSheetRepeat.gif);
@@ -69,6 +95,8 @@ body {
     display: block;
     height: 18px;
     float: left;
+    color: #C3C3C3;
+    text-decoration: none;
 }
 
 #XbcShellTopUtilityRight {

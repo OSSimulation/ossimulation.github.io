@@ -35,7 +35,6 @@ function backsound(){
 }
 
 function hudopen(){
-    selectsound();
     document.getElementById('sfx_HUDopen').currentTime=0;
     document.getElementById('sfx_HUDopen').play();
     document.getElementById('hud').className = 'hudin';
@@ -59,9 +58,39 @@ function hudclose(){
         document.getElementById('hud').className = 'invisible';
         document.getElementById('hudbg').className = 'invisible';
         document.getElementById('hudaspect').className = 'invisible';
-        check();
+        //check();
+        window.parent.postMessage("0","*")
     }, 190);
 }
+
+window.addEventListener( // You can probably hook into this if you embed the OS Menu into your own site! (for some reason...)
+    "message",
+    (event) => {
+        if (Array.from(event.data)[0] == "0") {
+            hudopen();
+            document.getElementById('text').innerText = event.data.substring(2);
+        } else if (Array.from(event.data)[0] == "1") {
+            hudclose();
+            document.getElementById('text').innerText = event.data.substring(2);
+        } else if (Array.from(event.data)[0] == "9") {
+            hudopen();
+            document.getElementById('text').innerText = event.data.substring(2);
+            setTimeout(function(){
+                document.getElementById('backbtn').className = 'invisible'
+            }, 195);   
+            setTimeout(function(){
+                document.getElementById('sfx_kick').currentTime=0;
+                document.getElementById('sfx_kick').play();    
+            }, 300);     
+            setTimeout(() => {
+                window.parent.postMessage("9","*")
+            }, 2850);   
+        } else {
+            console.error("Invalid message data!");
+        }
+    },
+    false,
+);
 
 
 window.addEventListener('DOMContentLoaded', () => {

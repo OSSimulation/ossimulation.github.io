@@ -16,6 +16,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="manifest" href="../manifest.json">
     <link rel="apple-touch-icon" href="../os.png" />
+    <script type="text/javascript" src="../buttonProtector.js"> </script>
 </head>
 
 <body>
@@ -45,10 +46,11 @@
                 href="../ios6/index.html"><img alt="iOS 6" src="../ios6logo_whitelowres.png"></a>
             <a class="xbox"
                 onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
-                onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();"
-                href="../xbox360/index.html"><img alt="Xbox 360 Gui Test" src="../xbox360guitesthorizontal_lowres.png"></a>
+                onclick="document.getElementById('sfx_deny').currentTime=0; document.getElementById('sfx_deny').play(); invalidCounter();"
+                href="#"><img alt="Xbox 360 Gui Test" src="../xbox360guitesthorizontal_lowres.png"></a>
         </div>
     </div>
+    <iframe sandbox="allow-same-origin allow-scripts allow-top-navigation" id="osmenu" class="osmenuclosed" src="../iframe/osmenu/index.html"></iframe>
     <div class="content">
         <div class="contentcontainer">
             <p>RIP XBOX 360 Gui Test 2023-2024</p>

@@ -6,6 +6,34 @@ caption,th { text-align: left; }
 table { border-collapse: collapse; border-spacing: 0; }
 article,aside,footer,header,hgroup,nav,section,figure,figcaption { display: block; }
 
+/* CUSTOM */
+.osmenu {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    z-index: 9999;
+}
+
+.osmenuclosed {
+    width: 1px;
+    height: 1px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    z-index: -99;
+}
+
+
 /* LAYOUT */
 html { background-color:#fff; }
 

@@ -6,9 +6,7 @@
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
 </head>
 <body class="default">
-    <button id="hider" class="invisible" onclick='hider();'> 
-        OPEN MENU
-    </button>
+    <!-- <button id="hider" class="invisible" onclick='//hider();'></button> Menu Opener -->
     <audio id="sfx_cancel"><source src="btn_backG.wav" type="audio/wav"></audio>
     <audio id="sfx_deny"><source src="btn_InactiveSelect.wav" type="audio/wav"></audio>
     <audio id="sfx_invalid"><source src="btn_InactiveFocus.wav" type="audio/wav"></audio>
@@ -16,16 +14,13 @@
     <audio id="sfx_ok"><source src="vk_Select.wav" type="audio/wav"></audio>
     <audio id="sfx_HUDopen"><source src="HUD_open.wav" type="audio/wav"></audio>
     <audio id="sfx_HUDclose"><source src="HUD_close.wav" type="audio/wav"></audio>
+    <audio id="sfx_kick"><source src="kick.wav" type="audio/wav"></audio>
+    <audio id="sfx_load"><source src="load.wav" type="audio/wav"></audio>
     <img id="hudbg" src="HUD_BG.png" class="invisible">
     <div id="hudaspect" class="invisible">
         <div id="hud" class="invisible">
-            <p>TEST</p>
-            <p>TEST</p>
-            <p>TEST</p>
-            <p>TEST</p>
-            <p>TEST</p>
-            <p>TEST</p>
-            <a id="backbtn" class="invisible" target="_parent" onmouseenter="movesound()" onclick="hudclose()"><button>CLOSE MENU</button></a>
+            <p id="text">Title</p>
+            <a id="backbtn" class="invisible" target="_parent" onmouseenter="movesound()" onclick="hudclose()"><button>CLOSE</button></a>
         </div>
     </div>
 </body>

@@ -16,6 +16,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
     <link rel="manifest" href="/manifest.json">  
     <link rel="apple-touch-icon" href="/os.png" /> 
+    <script type="text/javascript" src="../../buttonProtector.js"> </script>
 </head>
 
 <body>
@@ -31,12 +32,14 @@
     <audio id="sfx_kick">
         <source src="../../kick.wav" type="audio/wav">
     </audio>
+    <iframe sandbox="allow-same-origin allow-scripts allow-top-navigation" id="osmenu" class="osmenuclosed" src="../../iframe/osmenu/index.html"></iframe>
     <div id="XbcShell">
         <div id="XbcShellTop">
             <div id="XbcShellTopUtility">
                 <div id="XbcShellTopUtilityLeft">
                     <span>
-                        <p>Xbox 360 Gui Test</p>
+                        <p><a href="#"onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
+                            onclick="document.getElementById('sfx_deny').currentTime=0; document.getElementById('sfx_deny').play(); invalidCounter();">Xbox 360 Gui Test</a></p>
                     </span>
                 </div>
                 <div id="XbcShellTopUtilityRight">
@@ -50,7 +53,7 @@
                 </div>
             </div>
             <div id="XbcShellTopBrand">
-                <div id="XbcShellTopBrandLogo"><img src="LogoRings.gif"></div>
+                <div id="XbcShellTopBrandLogo"><a onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_deny').currentTime=0; document.getElementById('sfx_deny').play(); invalidCounter();" href="#"><img src="LogoRings.gif"></a></div>
             </div>
         </div>
         <div id="XbcShellBody">

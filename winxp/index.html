@@ -16,6 +16,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="manifest" href="../manifest.json">
     <link rel="apple-touch-icon" href="../os.png" />
+    <script type="text/javascript" src="../buttonProtector.js"> </script>
 </head>
 
 <body>
@@ -37,8 +38,8 @@
         <div class="container">
             <a class="winxp"
                 onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
-                onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();"
-                href="../winxp/index.html"><img alt="Windows XP Gui Test" src="../windowsxpguitest_horizontal.png"></a>
+                onclick="document.getElementById('sfx_deny').currentTime=0; document.getElementById('sfx_deny').play(); invalidCounter();"
+                href="#"><img alt="Windows XP Gui Test" src="../windowsxpguitest_horizontal.png"></a>
             <a class="ios"
                 onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
                 onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();"
@@ -49,6 +50,7 @@
                 href="../xbox360/index.html"><img alt="Xbox 360 Gui Test" src="../xbox360guitesthorizontal_lowres.png"></a>
         </div>
     </div>
+    <iframe sandbox="allow-same-origin allow-scripts allow-top-navigation" id="osmenu" class="osmenuclosed" src="../iframe/osmenu/index.html"></iframe>
     <div class="content">
         <div class="contentcontainer">
             <p>RIP Windows XP Gui Test 2021-2024</p>
