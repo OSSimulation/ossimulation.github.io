@@ -12,7 +12,7 @@ function check() {
         }
         return
     }
-    document.getElementById("hider").className = "notif"
+    //document.getElementById("hider").className = "notif"
 }
 
 function invalidCounter() {
