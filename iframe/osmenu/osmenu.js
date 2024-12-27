@@ -11,7 +11,7 @@ function check() {
     catch {
         return // Use non-existent non-interactive version. Why? Because I'm LAAAAZY!!!
     }
-    document.getElementById("hider").className = "notif"
+    // document.getElementById("hider").className = "notif"
 }
 
 function hider(){
