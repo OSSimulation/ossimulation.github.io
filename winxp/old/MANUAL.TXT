@@ -1,0 +1,175 @@
+################################
+#                              #
+#      Windows XP Gui Test     #
+#              by              #
+#  The OS Simulation Project!  #
+#                              #
+#      Manual written by:      #
+#        Thomasluigi07!        #
+#                              #
+################################
+
+This manual is recommended to be read with a fixed-width font.
+
+--= TABLE OF CONTENTS =--
+- 1.  Getting Started   -
+- 2.  The Desktop       -
+- 3.  Roblox in Roblox  -
+- 4.  The OS Menu       -
+- 5.  Achievements      -
+- 6.  VR Mode           -
+- 7.  Updates           -
+- 8.  Troubleshooting   -
+- 9.  Admin Tools       -
+- 10. Credits           -
+-------------------------
+
+# 1. Getting Started
+
+Hello! If you're reading this, welcome to the Windows XP Gui Test manual!
+While this manual may no longer be useful due to the fact the game has
+now been taken down, I hope this can find some use for you.
+
+NOTE: The following text below expects you to have already re-uploaded the
+game to your Roblox account, or you are using the simulator in Roblox Studio.
+
+To start Windows XP Gui Test, simply launch the place from your Roblox app,
+the Roblox website, or press Play in Roblox Studio.
+
+Once you do that, you will be greeted by the boot screen. The game will wait
+for assets to finish pre-loading, and then show a loading bar. 
+
+-------------------------------------------------
+|                                               |
+|                                               |
+|                                               |
+|                        ______                 |
+|                       /__/__/                 |
+|                MS(R) /__/__/TM                |
+|                 Windows XP                    |
+|                Professional                   |
+|                ____________                   |
+|               |__OOO_______|                  |
+|                                               |
+| Copyright (c)                                 |
+| Microsoft Corp.                 Microsoft(R)  |
+-------------------------------------------------
+
+Once that is done, the login screen appears.
+Below is a text version of the login screen. Numbers in brackets
+point out what the action does below.
+
+-------------------------------------------------
+|                                               |
+|                                               |
+|-----------------------------------------------|
+|                      |                        |
+|               ______ | _________________      |
+|              /__/__/ | |[ ] Username   | <-(1)|
+|       MS(R) /__/__/TM| |[ ]            |      |
+|        Windows XP    | -----------------      |
+| To begin, click name |                        |
+|                      |                        |
+|-----------------------------------------------|
+| [] Power Off <-(2)       After log in, you can|
+|                          add or change etc..  |
+-------------------------------------------------
+
+(1) - User box
+Click on this to log in to the computer.
+(2) - Power Off
+"Powers off" the computer by closing the game.
+
+Simply click on your username to login. Once you do that, you'll see this:
+
+-------------------------------------------------
+|                                            OS |
+|                                               |
+|-----------------------------------------------|
+|                                               |
+|                                               |
+|                                               |
+|                        welcome                |
+|                                               |
+|                                               |
+|                                               |
+|-----------------------------------------------|
+|                                               |
+|                                               |
+-------------------------------------------------
+
+While this is happening, the game prepares for you to log in.
+This may take a few seconds, so be patient. Once that's done,
+you will be greeted with the Desktop.
+
+# 2. The Desktop
+
+Below you will see a text version of the default desktop.
+Like earlier, the numbers in brackets correspond to info about
+the object.
+
+-------------------------------------------------
+| |__| <-(5)  Recycle Bin      OS Menu(16)-> OS |
+| :-)  <-(6)  Roblox Messenger                  |
+|  e   <-(7)  Internet Explorer        (1)      |
+| [t]  <-(8)  Avatar Editor            /-\      |
+| <r>  <-(9)  Admin Panel               |       |
+| C:/  <-(10) Command Prompt         Desktop    |
+| [O]  <-(11) Background Changer    Background  |
+|  R   <-(12) Roblox                            |
+| OS   <-(13) OS Menu Settings   Taskbar        |
+|  O   <-(14) Debug Place Teleport  |           |
+|  H   <-(15) Half-Life            \-/          |
+|__________________________________(2)__________|
+|#start|<-(3)Start BTN      Clock (4)->|10:30 AM|
+-------------------------------------------------
+
+(1) - Desktop Background
+A background for your desktop. Customisable using
+the Background Changer application (11)
+(2) - Taskbar
+Displays currently running apps from left-to-right.
+Clicking on an app title will minimise or open the
+window.
+(3) - Start Button
+Opens or closes the Start Menu.
+(4) - Clock
+Displays the current time.
+(5) - Recycle Bin
+View what's inside the recycle bin. (It's always empty)
+(6) - Roblox Messenger
+Message other players that are currently connected to the
+server you're in.
+(7) - Internet Explorer
+Opens up the Roblox web page, where you can watch a 
+"YouTube" video of the Roblox game trailer. In the
+debug place, it instead opens an unfinished
+The OS Simulation Project website.
+(8) - Avatar Editor
+Body colour editor for your Roblox avatar.
+(9) - Admin Panel
+Only available to players with high permission levels.
+If you have access, you can set Roblox messages and hints,
+teleport and bringing players, kicking players, enabling
+Bouncy Mode (where all parts in Roblox) bounce, and exploding
+all parts.
+(10) - Command Prompt
+Opens up a command prompt, where you can run commands.
+Used to display error logs. Can be also opened anytime by pressing
+the F8 key.
+(11) - Background Changer
+Allows you to customise your background wallpaper. You may choose
+from a selection of images or your own custom image using image ids.
+(12) - Roblox
+Launches the simulated Roblox game inside Roblox.
+(13) - OS Menu Settings
+Allows you to enable or disable the OS Menu.
+(14) - Debug Place Teleport
+Teleports you to & from the Debug Place.
+(15) - Half-Life
+Launches the Half-Life Launcher. Only available in the debug place.
+(16) - OS Menu
+If the OS Menu is enabled, clicking on the OS button will open or close
+the menu.
+
+TBD
