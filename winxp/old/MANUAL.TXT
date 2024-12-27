@@ -121,7 +121,7 @@ the object.
 |  O   <-(14) Debug Place Teleport  |           |
 |  H   <-(15) Half-Life            \-/          |
 |__________________________________(2)__________|
-|#start|<-(3)Start BTN      Clock (4)->|10:30 AM|
+|#start|<-(3)Start BTN   Sys. Tray(4)->|10:30 AM|
 -------------------------------------------------
 
 (1) - Desktop Background
@@ -133,8 +133,9 @@ Clicking on an app title will minimise or open the
 window.
 (3) - Start Button
 Opens or closes the Start Menu.
-(4) - Clock
-Displays the current time.
+(4) - System Tray
+Contains popup notifications (Balloons) sent by applications
+and also displays the current time.
 (5) - Recycle Bin
 View what's inside the recycle bin. (It's always empty)
 (6) - Roblox Messenger
