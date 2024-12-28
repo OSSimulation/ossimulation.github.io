@@ -14,7 +14,7 @@ This manual is recommended to be read with a fixed-width font.
 --= TABLE OF CONTENTS =--
 - 1.  Getting Started   -
 - 2.  The Desktop       -
-- 3.  Roblox in Roblox  -
+- 3.  ROBLOX in Roblox  -
 - 4.  The OS Menu       -
 - 5.  Achievements      -
 - 6.  VR Mode           -
@@ -109,19 +109,19 @@ Like earlier, the numbers in brackets correspond to info about
 the object.
 
 -------------------------------------------------
-| |__| <-(5)  Recycle Bin      OS Menu(16)-> OS |
-| :-)  <-(6)  Roblox Messenger                  |
-|  e   <-(7)  Internet Explorer        (1)      |
-| [t]  <-(8)  Avatar Editor            /-\      |
-| <r>  <-(9)  Admin Panel               |       |
-| C:/  <-(10) Command Prompt         Desktop    |
-| [O]  <-(11) Background Changer    Background  |
-|  R   <-(12) Roblox                            |
-| OS   <-(13) OS Menu Settings   Taskbar        |
-|  O   <-(14) Debug Place Teleport  |           |
-|  H   <-(15) Half-Life            \-/          |
-|__________________________________(2)__________|
-|#start|<-(3)Start BTN   Sys. Tray(4)->|10:30 AM|
+| |_|  <-(5)                          (16)-> OS |
+| :-)  <-(6)                                    |
+|  e   <-(7)                                    |
+| [t]  <-(8)                                    |
+| <r>  <-(9)                                    |
+| C:/  <-(10)              (1)                  |
+| [O]  <-(11)                          ______   |
+|  R   <-(12)                         /__/__/   |
+| OS   <-(13)                   TOSP /__/__/TM  |
+|  O   <-(14)                    Windows XP     |
+|  H   <-(15)                    Gui Test       |
+|_______________________________________________|
+|#start|<-(3)         (2)         (4)->|10:30 AM|
 -------------------------------------------------
 
 (1) - Desktop Background
@@ -138,16 +138,17 @@ Contains popup notifications (Balloons) sent by applications
 and also displays the current time.
 (5) - Recycle Bin
 View what's inside the recycle bin. (It's always empty)
-(6) - Roblox Messenger
+(6) - ROBLOX Messenger
 Message other players that are currently connected to the
-server you're in.
+game server you're in. You cannot message offline players
+or players that are in another experience.
 (7) - Internet Explorer
-Opens up the Roblox web page, where you can watch a 
-"YouTube" video of the Roblox game trailer. In the
+Opens up the ROBLOX web page, where you can watch a 
+"YouTube" video of the ROLOXx game trailer. In the
 debug place, it instead opens an unfinished
 The OS Simulation Project website.
 (8) - Avatar Editor
-Body colour editor for your Roblox avatar.
+Body colour editor for your ROBLOX avatar.
 (9) - Admin Panel
 Only available to players with high permission levels.
 If you have access, you can set Roblox messages and hints,
@@ -161,8 +162,8 @@ the F8 key.
 (11) - Background Changer
 Allows you to customise your background wallpaper. You may choose
 from a selection of images or your own custom image using image ids.
-(12) - Roblox
-Launches the simulated Roblox game inside Roblox.
+(12) - ROBLOX
+Launches the simulated ROBLOX window.
 (13) - OS Menu Settings
 Allows you to enable or disable the OS Menu.
 (14) - Debug Place Teleport
@@ -173,4 +174,144 @@ Launches the Half-Life Launcher. Only available in the debug place.
 If the OS Menu is enabled, clicking on the OS button will open or close
 the menu.
 
-TBD
+Clicking on the Start Button (3) will open up the Start Menu.
+Below is a heavily simplified Start Menu. 
+
+-------------------------------------------------
+| |_|                                        OS |
+|____________________                           |
+|[  ]  Username     |                           |
+|[__]_______________|                           |
+|_________|_________|                           |
+|_________|_________|                           |
+|___(1)___|___(2)___|                  ______   |
+|_________|_________|                 /__/__/   |
+|_________|         |           TOSP /__/__/    |
+|___(3)___|_________|            Windows XP     |
+|      (4)Shut Down |            Gui Test       |
+|___________________|___________________________|
+|#start|                               |10:30 AM|
+-------------------------------------------------
+
+(1) - Program List (Left Side)
+Lists the most frequently used apps by all users.
+Some programs are not implemented and are stubs.
+(2) - Folder Shortcuts (Right Side)
+Not implemented - Opens folders such as My Documents.
+(3) - All Programs
+Not impleneted - Lists all available programs on your
+computer at a glance.
+(4) - Shut Down
+Opens the Power Options menu, where you can choose
+if you wish to shut down the computer or cancel.
+
+# 3. ROBLOX in Roblox
+
+NOTE: ROBLOX is not available in VR Mode.
+
+Clicking on the ROBLOX shortcut anywhere will immediately open the
+simulated Roblox screen. You will see a screen showing the bricks
+and snaps build into place.
+
+-------------------------------------------------
+|  |_|      ________________________         OS |
+|  :-)     /R ROBLOX       [_][O][X]\           |
+|   e      |------------------------|           |
+|  [t]     |   __________________   |           |
+|  <r>     |  |                  |  |           |
+|  C:/     |  | Bricks:0 Snaps:0 |  |           |
+|  [O]     |  |                  |  |           |
+|   R      |  |__________________|  |           |
+|  OS      |                        |           |
+|   O      |________________________|           |
+|   H      |________________________|           |
+|_______________________________________________|
+|#start||R ROBLOX|                     |10:30 AM|
+-------------------------------------------------
+
+If you are on Mobile however, this screen will not be displayed
+and simply skip loading due to performance
+issues.
+
+Once the Place has finished loading, you will find yourself
+in the Crossroads. In this land you can choose to "BLOX" (fight)
+other players or find secrets...
+
+Here is a list of basic controls:
+ ___________________________________________________________
+|__ACTION__|__KEYBOARD__|__MOBILE__|__XBOX__|__PLAYSTATION__|
+|   Move   |  WASD OR   | VIRTUAL  |     LEFT THUMBSTICK    |
+|_Character|_ARROW_KEYS_|THUMBSTICK|________________________|
+|   Move   |  HOLD RMB  | TOUCH &  |    RIGHT THUMBSTICK    |
+|__Camera__|___&_DRAG___|___DRAG___|________________________|
+|___Jump___|__SPACEBAR__|_JUMP_BTN_|__A_BTN_|___X_BUTTON____|
+| Zoom In  | I/O KEYS OR| PINCH IN | PRESS  |   PRESS R3    |
+|__or_Out__|_MOUSE_WHEEL|__OR_OUT__|___RS___|_______________|
+|Drop_Tool_|_BACKSPACE__|___________NOT_AVAILABLE___________|
+|  Change  | 1,2,3,4,5, |  TAP ON  | LB/RB  |   L1/R1 BTNS  |
+|___Tool___|_6,7,8,9,0__|___TOOL___|__BTNS__|_______________|
+
+Below is a visualisation of what ROBLOX's UI looks like,
+in fullscreen mode. Once again, the numbers correspond to
+the object.
+
+-------------------------------------------------
+|__(1)__|__(2)__|__(3)__|__(4)__|__(5)__| ____  |
+|                          (6)->|Player List  | |
+|______________            (7)->|Username     | |
+|Username;_Hi_|__          (8)->|Dude_________| |
+|Dude;_yo_wassup|<-(9)                          |
+|                                            |  |
+|                      (10)            (11)->|  |
+|                                            |  |
+|                                           HTH |
+|                                         ______|
+|                                  (13)->|Report|
+|____________________                      ^ +  |
+|    |    |    |    | <-(12)        (14)-> v -  |
+|____|____|____|____|___________________________|
+|To chat click here or press the "/" key  (15)  |
+-------------------------------------------------
+
+(1) - Toolbox
+Formerly implemented - Admin Only
+Opens the toolbox for inserting parts.
+(2) - Edit Mode
+Not Implemented - Admin Only
+Shows the Roblox Studio UI.
+(3) - Help...
+Opens up the Help dialog displaying instructions on how to
+play ROBLOX with the currently in-use input device.
+(4) - Fullscreen
+Enables/disables Fullscreen mode.
+(5) - Exit
+Exits ROBLOX.
+(6) - Player List
+Lists all players that are currently connected to the server.
+(7) - (Player List) You
+Your username will always be at the top of the playerlist.
+(8) - (Player List) Other players
+Other players usernames will be listed in the order they joined
+the server.
+(9) - Chat Container
+Displays current chat messages from this game server.
+NOTE: Does not list messages sent in the ROBLOX Messenger
+application. Chat is not available on XBOX or Playstation.
+(10) - Game Area
+The 3D Roblox world.
+(11) - Health
+If the bar is fully green, you're at your maximum health.
+If the bar is fully red, you've dead, and you will respawn soon.
+(12) - Backpack
+Every tool you have in your backpack. Some tools are offensive
+and some tools are defensive. There is also a "Reset" tool available
+that respawns your character, if you get stuck.
+(13) - Report
+Formerly implemented - Opens the report dialog, so you can send
+a report to the admins.
+(14) - Camera Controls
+The ^ and v buttons pan the camera up and down, while the
++ and - buttons zoom in and zoom out.
+(15) - Chat box
+Type a message to send to other players.
+NOTE: Chat is not available on XBOX or Playstation.
