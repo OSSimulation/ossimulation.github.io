@@ -117,7 +117,7 @@ the object.
 | C:/  <-(10)              (1)                  |
 | [O]  <-(11)                          ______   |
 |  R   <-(12)                         /__/__/   |
-| OS   <-(13)                   TOSP /__/__/TM  |
+| OS   <-(13)                   TOSP /__/__/    |
 |  O   <-(14)                    Windows XP     |
 |  H   <-(15)                    Gui Test       |
 |_______________________________________________|
@@ -256,21 +256,21 @@ in fullscreen mode. Once again, the numbers correspond to
 the object.
 
 -------------------------------------------------
-|__(1)__|__(2)__|__(3)__|__(4)__|__(5)__| ____  |
-|                          (6)->|Player List  | |
-|______________            (7)->|Username     | |
-|Username;_Hi_|__          (8)->|Dude_________| |
-|Dude;_yo_wassup|<-(9)                          |
+|__(1)__|__(2)__|__(3)__|__(4)__|__(5)__|_____  |
+|                               |Player List  | |
+|______________                 |Username  (6)| |
+|Username;_Hi_|__               |Dude_________| |
+|Dude;_yo_wassup|<-(7)                          |
 |                                            |  |
-|                      (10)            (11)->|  |
+|                      (8)              (9)->|  |
 |                                            |  |
 |                                           HTH |
 |                                         ______|
-|                                  (13)->|Report|
+|                                  (11)->|Report|
 |____________________                      ^ +  |
-|    |    |    |    | <-(12)        (14)-> v -  |
+|    |    |    |    | <-(10)        (12)-> v -  |
 |____|____|____|____|___________________________|
-|To chat click here or press the "/" key  (15)  |
+|To chat click here or press the "/" key  (13)  |
 -------------------------------------------------
 
 (1) - Toolbox
@@ -288,30 +288,27 @@ Enables/disables Fullscreen mode.
 Exits ROBLOX.
 (6) - Player List
 Lists all players that are currently connected to the server.
-(7) - (Player List) You
-Your username will always be at the top of the playerlist.
-(8) - (Player List) Other players
-Other players usernames will be listed in the order they joined
-the server.
-(9) - Chat Container
+Your username will always be at the top of the playerlist, while
+other players will be listed in the order they joined the server.
+(7) - Chat Container
 Displays current chat messages from this game server.
 NOTE: Does not list messages sent in the ROBLOX Messenger
 application. Chat is not available on XBOX or Playstation.
-(10) - Game Area
+(8) - Game Area
 The 3D Roblox world.
-(11) - Health
+(9) - Health Bar
 If the bar is fully green, you're at your maximum health.
 If the bar is fully red, you've dead, and you will respawn soon.
-(12) - Backpack
+(10) - Backpack
 Every tool you have in your backpack. Some tools are offensive
 and some tools are defensive. There is also a "Reset" tool available
 that respawns your character, if you get stuck.
-(13) - Report
+(11) - Report
 Formerly implemented - Opens the report dialog, so you can send
 a report to the admins.
-(14) - Camera Controls
+(12) - Camera Controls
 The ^ and v buttons pan the camera up and down, while the
 + and - buttons zoom in and zoom out.
-(15) - Chat box
+(13) - Chat box
 Type a message to send to other players.
 NOTE: Chat is not available on XBOX or Playstation.
