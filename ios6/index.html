@@ -1,71 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
 
 <head>
-    <title>The OS Simulation Project - Coming Soon!</title>
-    <link rel="stylesheet" href="../main.css">
+    <title>iOS 6</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <meta content="The OS Simulation Project" property="og:title">
-    <meta
-        content="The OS Simulation Project is a project where we make Unity apps that simulate discontinued operating systems, while trying to be as accurate to the original operating system as possible. The Roblox experiences we used to make are now discontinued and are no longer being updated."
-        property="og:description">
+    <meta content="iOS 6 - The OS Simulation Project" property="og:title">
+    <meta content="The OS Simulation Project is a project where we make Unity apps that simulate discontinued operating systems, while trying to be as accurate to the original operating system as possible. The Roblox experiences we used to make are now discontinued and are no longer being updated." property="og:description">
     <meta content="https://os.thomasluigi07.com/ios6/index.html" property="og:url">
-    <meta content="https://os.thomasluigi07.com/THEOSSIMULATIONPROJECT_LOWRES.png" property="og:image">
-    <meta content="#34363e" data-react-helmet="true" name="theme-color">
+    <meta content="../ios6logo_horizontal.png" property="og:image">
+    <meta content="#ffffff" data-react-helmet="true" name="theme-color">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link rel="manifest" href="/manifest.json">
-    <link rel="apple-touch-icon" href="/os.png" />
-    <script type="text/javascript" src="../buttonProtector.js"> </script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=1024">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+    <link id="globalheader-stylesheet" rel="stylesheet" href="./navigation.css" type="text/css">
+    <link rel="stylesheet" href="./base.css" type="text/css">
+    <link rel="stylesheet" href="./ios.css" type="text/css">
+    <link id="globalheader-enhanced-stylesheet" rel="stylesheet" href="./enhanced.css" type="text/css">
+    <script type="text/javascript" src="../buttonProtector.js"></script>
 </head>
 
-<body>
+<body class="overview" id="overview">
     <audio id="sfx_deny">
         <source src="../btn_InactiveFocus.wav" type="audio/wav">
     </audio>
-    <audio id="sfx_kick"><source src="../kick.wav" type="audio/wav"></audio>
     <audio id="sfx_move">
         <source src="../vk_Focus.wav" type="audio/wav">
     </audio>
     <audio id="sfx_ok">
         <source src="../vk_Select.wav" type="audio/wav">
     </audio>
-    <a class="logo"
-        onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
-        onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();"
-        href="../index.html"><img alt="The OS Simulation Project" src="../THEOSSIMULATIONPROJECT_LOWRES.png"></a>
-    <div class="navbar">
-        <div class="container">
-            <a class="winxp"
-                onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
-                onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();"
-                href="../winxp/index.html"><img alt="Windows XP Gui Test" src="../windowsxpguitest_horizontal.png"></a>
-            <a class="ios"
-                onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
-                onclick="document.getElementById('sfx_deny').currentTime=0; document.getElementById('sfx_deny').play(); invalidCounter();"
-                href="#"><img alt="iOS 6" src="../ios6logo_whitelowres.png"></a>
-            <a class="xbox"
-                onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"
-                onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();"
-                href="../xbox360/index.html"><img alt="Xbox 360 Gui Test" src="../xbox360guitesthorizontal_lowres.png"></a>
-        </div>
-    </div>
+    <audio id="sfx_kick">
+        <source src="../kick.wav" type="audio/wav">
+    </audio>
+    <nav id="globalheader" class=" globalheader-js svg globalheader-loaded globalheader-loaded">
+        <ul id="globalnav" role="navigation">
+            <li id="gn-apple"><a onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" href="../index.html"><span>The OS Simulation Project</span></a></li>
+            <li id="gn-store"><a onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" href="../winxp/index.html"><span>Windows XP Gui Test</span></a></li>
+            <li id="gn-mac"><a onclick="document.getElementById('sfx_deny').currentTime=0; document.getElementById('sfx_deny').play(); invalidCounter();" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" href="#"><span>iOS 6</span></a></li>
+            <li id="gn-ipod"><a onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();"href="../xbox360/index.html"><span>XBOX 360 Gui Test</span></a></li>
+        </ul>
+    </nav>
     <iframe sandbox="allow-same-origin allow-scripts allow-top-navigation" id="osmenu" class="osmenuclosed" src="../iframe/osmenu/index.html"></iframe>
-    <div class="content">
-        <div class="contentcontainer">
-            <p>Sorry, but this page isn't finished yet.</p>
-            <br />
-            <p>If you're looking for the iOS 6 (on Roblox) page, <a href="roblox/index.html">click here</a>.</a></p>
-            <p>If you're looking for the iOS 6 (in Unity) page, <a href="unity/index.html">click here</a>.</a></p>
+    <div id="main">
+        <div class="content" id="content" data-hires="true">
+            <h3>Where do you want to go today?</h3>
+            <section class="grid3col promos">
+                <a class="column first" href="unity/index.html">
+                    <h2>iOS 6 Simulator</h2>
+                    <p>The brand-spanking, all-new, shiny, and polished simulation of iOS 6, recreated in the Unity engine.</p>
+                    <span class="more">Learn more</span> <img
+                        src="./overview_unity.jpg"
+                        width="250" height="157" alt="">
+                </a> <a class="column middle" href="https://www.youtube.com/playlist?list=PLA2PAm5MODlkYscDHU5qKXNelQwZHyO5Z">
+                    <h2>Developer Logs</h2>
+                    <p>Want to learn how the new iOS 6 Simulator works? Tailspin96's developer logs have got you covered.</p> <span class="more">Watch now</span> <img
+                        src="./overview_devlog.jpg"
+                        width="208" height="156" alt="">
+                </a> <a class="column last" href="roblox/index.html">
+                    <h2>iOS 6 (on Roblox)</h2>
+                    <p>Taken down voluntarily in October 2024 due to Xbox 360 Gui Test being taken down.</p> <br> <span class="more">Learn more</span> <img
+                        src="./overview_dead_icon.jpg"
+                        width="119" height="156" alt="">
+
+                </a>
+            </section>
+        </div><!--/content-->
+    </div><!--/main-->
+
+    <footer id="globalfooter">
+        <div id="breadory">
+            <ol id="breadcrumbs">
+                <li class="home"><a href="../index.html">Home</a></li>
+                <li>iOS 6</li>
+            </ol>
+        </div><!--/breadory-->
+        <p class="gf-buy"> </p>
+
+        <div class="gf-sosumi">
+            <p>iOS and its related logos and assets are owned by Apple Inc. We are not affiliated with Apple Inc.</p>
+            <ul class="piped">
+                <li><a href="https://github.com/OSSimulation" class="first">GitHub</a>
+                </li>
+                <li><a href="https://roblox.com/my/groups.aspx?gid=14298372">Roblox Group</a></li>
+                <li><a href="https://youtube.com/@OSSimulation">Youtube</a></li>
+            </ul>
         </div>
-    </div>
-    <div class="footer">
-        <p>
-            <a href="https://github.com/OSSimulation">GitHub</a> | 
-            <a href="https://www.roblox.com/my/groups.aspx?gid=14298372">Roblox Group</a> | 
-            <a href="https://youtube.com/@OSSimulation">YouTube</a>
-        </p>
-    </div>
+
+    </footer><!--/globalfooter-->
+
+
+
 </body>
 
 </html>

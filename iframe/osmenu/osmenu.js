@@ -20,23 +20,57 @@ function hider(){
 }
 
 function movesound(){
-    document.getElementById('sfx_move').currentTime=0;
-    document.getElementById('sfx_move').play();
+    try {
+        document.getElementById('sfx_move').currentTime=0;
+        document.getElementById('sfx_move').play();
+    }
+    catch { // Don't want the browser complaining and saying "uhh we killed the javascript because we dont know what the fuck a sound is"
+        console.warn("Couldn't play move sound!");
+    }
 }
 
 function selectsound(){
-    document.getElementById('sfx_ok').currentTime=0;
-    document.getElementById('sfx_ok').play();
+    try {
+        document.getElementById('sfx_ok').currentTime=0;
+        document.getElementById('sfx_ok').play();
+    }
+    catch { // See above
+        console.warn("Couldn't play select sound!");
+    }
 }
 
 function backsound(){
-    document.getElementById('sfx_cancel').currentTime=0;
-    document.getElementById('sfx_cancel').play(); 
+    try {
+        document.getElementById('sfx_cancel').currentTime=0;
+        document.getElementById('sfx_cancel').play();
+    }
+    catch { // This tounge-in-cheek documentation is brought to you by... NO-ONE. That's right. Nobody. Too bad!
+        console.warn("Couldn't play back sound!");
+    }
+}
+
+function opensound(){ // Used only once in the whole code but WHO CARES.
+    try {
+        document.getElementById('sfx_HUDopen').currentTime=0;
+        document.getElementById('sfx_HUDopen').play();
+    }
+    catch { // ...
+        console.warn("Couldn't play HUD open sound!");
+    }
+}
+
+function closesound(){ // See above, AGAIN.
+    try {
+        document.getElementById('sfx_HUDclose').currentTime=0;
+        document.getElementById('sfx_HUDclose').play();
+    }
+    catch { // I wonder if anyone is actually even reading these stupid comments?
+        console.warn("Couldn't play HUD open sound!");
+    }
 }
 
 function hudopen(){
-    document.getElementById('sfx_HUDopen').currentTime=0;
-    document.getElementById('sfx_HUDopen').play();
+    opensound();
     document.getElementById('hud').className = 'hudin';
     document.getElementById('hudbg').className = 'hudbg';
     document.getElementById('hudaspect').className = 'hudaspect';
@@ -49,9 +83,8 @@ function hudopen(){
 }
 
 function hudclose(){
-    backsound();
-    document.getElementById('sfx_HUDclose').currentTime=0;
-    document.getElementById('sfx_HUDclose').play();
+    backsound(); // This literally only functions as a custom alert() so who needs a proper OS Menu?
+    closesound();
     document.getElementById('hud').className = 'hudout';
     document.getElementById('backbtn').className = 'invisible'
     setTimeout(function(){
