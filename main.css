@@ -65,6 +65,7 @@ html {
 
 .logo {
     max-width: 600px;
+    min-width: 525px;
     width: 100%;
     display: block;
     margin: auto;
@@ -83,7 +84,7 @@ html.x360 .content {padding: 0px;}
     color: white;
     display: block;
     max-width: 898px;
-    min-width: 585px;
+    min-width: 523px;
     margin: 5px auto;
     margin-top: -9px;
     z-index: -3;
