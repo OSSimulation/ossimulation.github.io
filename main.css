@@ -35,23 +35,26 @@
 html {
     background-image: url(./tile.png);
     background-color: #34363e;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 .navbar {
-    min-width: 585px;
+    min-width: 525px;
     display: block;
     position: relative;
-    max-width: 724px;
+    max-width: 900px;
     border-radius: 3px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-width: 1px;
     border-style: solid;
     border-color: white;
-    border-bottom-style: none;
     width: 100%;
     margin: 5px auto;
-    height: 50px;
+    margin-bottom: 8px;
+    height: 33px;
     background-color: black;
-    background-image: url(./darkheader.png);
     -khtml-box-shadow: rgba(0, 0, 0, 0.25) 0 10px 9px;
     -ms-box-shadow: rgba(0, 0, 0, 0.25) 0 10px 9px;
     -o-box-shadow: rgba(0, 0, 0, 0.25) 0 10px 9px;
@@ -61,11 +64,17 @@ html {
 }
 
 .logo {
-    max-width: 524px;
+    max-width: 600px;
     width: 100%;
     display: block;
     margin: auto;
     margin-top: 5px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer
 }
 
 html.x360 .content {padding: 0px;}
@@ -73,7 +82,7 @@ html.x360 .content {padding: 0px;}
 .content {
     color: white;
     display: block;
-    max-width: 724px;
+    max-width: 898px;
     min-width: 585px;
     margin: 5px auto;
     margin-top: -9px;
@@ -83,12 +92,14 @@ html.x360 .content {padding: 0px;}
     border-width: 1px;
     border-style: solid;
     /* border-color: white; */
-    -khtml-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
+    -khtml-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     -khtml-box-shadow: rgba(0, 0, 0, 0.439) 0 2px 3px;
     -ms-box-shadow: rgba(0, 0, 0, 0.439) 0 2px 3px;
     -o-box-shadow: rgba(0, 0, 0, 0.439) 0 2px 3px;
@@ -114,12 +125,10 @@ html.x360 .content {padding: 0px;}
 }
 
 .container {
-    margin: auto;
     display: table;
     width: 100%;
-    max-width: 724px;
-    min-width: 585px;
-    height: 50px;
+    height: 30px;
+    table-layout: fixed;
 }
 
 .popup {
@@ -152,9 +161,8 @@ html.x360 .contentcontainer {
     padding: 0px;
 }
 
-.container a {
-    background-image: url(./darkheader.png);
-    width: 33.3333333333%;
+.container tr td a,
+.container tr td button {
     padding-left: 5px;
     padding-right: 5px;
     display: table-cell;
@@ -163,7 +171,18 @@ html.x360 .contentcontainer {
     text-decoration: none;
 }
 
-.container a:hover, .container a:active, .container a:focus {
+.container tr td a {
+    width: 33.3333333333%;
+}
+
+.container tr td button {
+    width: 100%;
+}
+.container td, .container td, .container td{
+    background-image: url(./darkheader.png);
+}
+
+.container td:hover, .container td:active, .container td:focus{
     background-image: url(./lightheader.png);
 }
 
@@ -179,7 +198,8 @@ html.x360 .contentcontainer {
     color: rgb(10, 177, 66);
 }
 
-.container a img {
+.container tr td a img,
+.container tr td button img {
     display: block;
     margin-left: auto;
     margin-right: auto;

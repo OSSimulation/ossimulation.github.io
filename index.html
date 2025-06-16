@@ -25,14 +25,22 @@
     <audio id="sfx_kick"><source src="kick.wav" type="audio/wav"></audio>
     <audio id="sfx_move"><source src="vk_Focus.wav" type="audio/wav"></audio>
     <audio id="sfx_ok"><source src="vk_Select.wav" type="audio/wav"></audio>
-    <a class="logo" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_deny').currentTime=0; document.getElementById('sfx_deny').play(); invalidCounter();" href="#"><img alt="The OS Simulation Project" src="./THEOSSIMULATIONPROJECT_LOWRES.png"></a>
-    <div class="navbar">
-        <div class="container">
-            <a class="winxp" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" href="./winxp/index.html"><img alt="Windows XP Gui Test" src="./windowsxpguitest_horizontal.png  "></a>
-            <a class="ios" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" href="./ios6/index.html"><img  alt="iOS 6" src="./ios6logo_whitelowres.png"></a>
-            <a class="xbox" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" href="./xbox360/index.html"><img alt="Xbox 360 Gui Test" src="./xbox360guitesthorizontal_lowres.png"></a>
-        </div>
-    </div>
+    <a class="logo" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="invalidCounter();document.getElementById('sfx_deny').currentTime=0;document.getElementById('sfx_deny').play();"><img alt="The OS Simulation Project" src="./THEOSSIMULATIONPROJECT_LOWRES.png"></a>
+    <table class="navbar" cellspacing="0">
+        <tbody class="container">
+            <tr>
+                <td>
+                    <a class="winxp" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" href="./winxp/index.html"><img alt="Windows XP Gui Test" src="./windowsxpguitest_horizontal.png  "></a>
+                </td>
+                <td>
+                    <a class="ios" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" href="./ios6/index.html"><img  alt="iOS 6" src="./ios6logo_whitelowrespad.png"></a>
+                </td>
+                <td>
+                    <a class="xbox" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" href="./xbox360/index.html"><img alt="Xbox 360 Gui Test" src="./xbox360guitesthorizontal_lowres.png"></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     <iframe sandbox="allow-same-origin allow-scripts allow-top-navigation" id="osmenu" class="osmenuclosed" src="./iframe/osmenu/index.html"></iframe>
     <div class="content">
         <div class="contentcontainer">
@@ -55,7 +63,6 @@
     <div class="footer">
         <p>
             <a href="https://github.com/OSSimulation">GitHub</a> | 
-            <a href="https://www.roblox.com/my/groups.aspx?gid=14298372">Roblox Group</a> | 
             <a href="https://youtube.com/@OSSimulation">YouTube</a>    
         </p>
     </div>

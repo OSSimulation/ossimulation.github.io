@@ -89,14 +89,20 @@ body {
 
 #XbcShellTopUtilityLeft span,
 #XbcShellTopUtilityLeft span p,
-#XbcShellTopUtilityLeft span a {
+#XbcShellTopUtilityLeft span a,
+#XbcShellTopUtilityLeft span button {
     margin: 0;
+    border: none;
     padding: 0;
     display: block;
     height: 18px;
     float: left;
     color: #C3C3C3;
     text-decoration: none;
+    background: none;
+    font-size: 10px;
+    text-align: left;
+    cursor: pointer;
 }
 
 #XbcShellTopUtilityRight {
@@ -150,6 +156,14 @@ body {
     height: 120px;
     width: 760px;
     left: 5px;
+}
+
+#XbcShellTopBrandLogo button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 #XbcShellTopBrandLogo img {

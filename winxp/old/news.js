@@ -4,7 +4,7 @@ function changeNewsMsg(newsTitl,newsSubTitl,link) {
 
     newsTitle.innerHTML = newsTitl; // set the title
     newsSubTitle.innerHTML = newsSubTitl; // set the subtitle
-    newsSubTitle.setAttribute("href",link); // set the link
+    // newsSubTitle.setAttribute("href",link); // set the link
 }
 function newsLoop() {
     changeNewsMsg("NEWS","All of our Roblox games have been permamently taken down","#");
