@@ -1,0 +1,102 @@
+@keyframes popupopen {
+    from {
+        width: 0%;
+        height: 0%;
+    }
+
+    to {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+*{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    background: url(tile.png);
+}
+
+container {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 700px;
+    max-width: 700px;
+    width: 700px;
+}
+
+navbar .left {
+    background: url(top_left.png);
+}
+navbar .middle {
+    width: 676px;
+    background: url(top_middle.png);
+    background-size: 100% 100%;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+navbar .right {
+    background: url(top_right.png);
+}
+
+main {
+    background: white;
+    display: block;
+    border: #9f9d9f solid 2px;
+    border-color: #9f9d9f;
+    border-style: solid;
+    border-width: 2px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    padding: 5px;
+}
+
+main .welcome, main .ios6sim, main .osmenudet {
+    vertical-align: top;
+}
+
+footer .left {
+    background: url(bottom_left.png);
+}
+footer .middle {
+    background: url(bottom_middle.png);
+    background-size: 100% 100%;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+    color: white;
+    vertical-align: bottom;
+}
+footer .right {
+    background: url(bottom_right.png);
+}
+
+.osmenu {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    z-index: 99;
+}
+
+.osmenuclosed {
+    width: 1px;
+    height: 1px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    z-index: -99;
+}

@@ -1,72 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>The OS Simulation Project</title>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta content="The OS Simulation Project" property="og:title">
-    <meta
-        content="The OS Simulation Project is a project where we make Unity apps that simulate discontinued operating systems, while trying to be as accurate to the original operating system as possible. The Roblox experiences we used to make are now discontinued and are no longer being updated."
-        property="og:description">
-    <meta content="https://os.thomasluigi07.com" property="og:url">
-    <meta content="./THEOSSIMULATIONPROJECT_LOWRES.png"
-        property="og:image">
     <meta content="#34363e" data-react-helmet="true" name="theme-color">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
-    <link rel="manifest" href="/manifest.json"> 
-    <link rel="apple-touch-icon" href="/os.png" />
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./os.png" />
     <script type="text/javascript" src="./buttonProtector.js"> </script>
 </head>
-
 <body>
-    <audio id="sfx_deny"><source src="btn_InactiveFocus.wav" type="audio/wav"></audio>
-    <audio id="sfx_kick"><source src="kick.wav" type="audio/wav"></audio>
-    <audio id="sfx_move"><source src="vk_Focus.wav" type="audio/wav"></audio>
-    <audio id="sfx_ok"><source src="vk_Select.wav" type="audio/wav"></audio>
-    <a class="logo" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="invalidCounter();document.getElementById('sfx_deny').currentTime=0;document.getElementById('sfx_deny').play();"><img alt="The OS Simulation Project" src="./THEOSSIMULATIONPROJECT_LOWRES.png"></a>
-    <table class="navbar" cellspacing="0">
-        <tbody class="container">
-            <tr>
-                <td>
-                    <a class="winxp" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" href="./winxp/index.html"><img alt="Windows XP Gui Test" src="./windowsxpguitest_horizontal.png  "></a>
-                </td>
-                <td>
-                    <a class="ios" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" href="./ios6/index.html"><img  alt="iOS 6" src="./ios6logo_whitelowrespad.png"></a>
-                </td>
-                <td>
-                    <a class="xbox" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" href="./xbox360/index.html"><img alt="Xbox 360 Gui Test" src="./xbox360guitesthorizontal_lowres.png"></a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
     <iframe sandbox="allow-same-origin allow-scripts allow-top-navigation" id="osmenu" class="osmenuclosed" src="./iframe/osmenu/index.html"></iframe>
-    <div class="content">
-        <div class="contentcontainer">
-            <p>Welcome to The OS Simulation Project's website!</p>
-            <br />
-            <p>The OS Simulation Project's Roblox experiences are no longer being worked on. Those experiences are open source and free to use to anyone, and are available on our <a href="https://github.com/OSSimulation/Resources">Resources GitHub repository</a> and the <a href="https://archive.org/details/ossimulation-rbxls">Internet Archive</a>.</p>
-            <p>We are moving onto Unity projects, with iOS 6 being first to be made into a unity project.</p>
-            <br />
-            <p>If you came here from my personal website, <a href="https://thomasluigi07.com">click this link to go back</a>.</p>
-            <br />
-            <p>We are not affiliated with Microsoft or Apple in any way. None of this is official.</p>
-            <!-- And if you think this is... Why? Does this look official to you? -->
-            <!-- I don't know if this disclaimer will really do anything. After all, -->
-            <!-- they have every right to DMCA this. Just like with what they did -->
-            <!-- with the Roblox version of XBOX 360 Gui Test. -->
-            <!-- -->
-            <!-- Also hi source code reader :-) -->
-        </div>
-    </div>
-    <div class="footer">
-        <p>
-            <a href="https://github.com/OSSimulation">GitHub</a> | 
-            <a href="https://youtube.com/@OSSimulation">YouTube</a>    
-        </p>
-    </div>
+    <audio id="sfx_deny"><source src="./btn_InactiveSelect.wav" type="audio/wav"></audio>
+    <audio id="sfx_deny_move"><source src="./btn_InactiveFocus.wav" type="audio/wav"></audio>
+    <audio id="sfx_kick"><source src="./kick.wav" type="audio/wav"></audio>
+    <audio id="sfx_move"><source src="./vk_Focus.wav" type="audio/wav"></audio>
+    <audio id="sfx_ok"><source src="./vk_Select.wav" type="audio/wav"></audio>
+    <container>
+        <navbar>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="left" width="12" height="79"></td>
+                    <td class="middle" width="676" height="79">
+                        <table cellpadding="0" cellspacing="0" border="0" height="79">
+                            <tr>
+                                <td>
+                                    <a href="#" onmouseenter="document.getElementById('sfx_deny_move').currentTime=0; document.getElementById('sfx_deny_move').play();" onclick="document.getElementById('sfx_deny').currentTime=0; document.getElementById('sfx_deny').play(); invalidCounter();" title="The OS Simulation Project" class="logo"><img alt="The OS Simulation Project" src="css/logo.png" onmouseover="this.src='css/logo_hvr.png';" onmouseout="this.src='css/logo.png';"></a>
+                                </td>
+                                <td>
+                                    <img src="css/spacer_12px.png">
+                                </td>
+                                <td style="vertical-align: top">
+                                    <a href="./winxp/index.html" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" title="Windows XP Gui Test" class="winxp"><img alt="Windows XP Gui Test" src="css/xpbtn.png" onmouseover="this.src='css/xpbtn_hvr.png';" onmouseout="this.src='css/xpbtn.png';"></a>
+                                </td>
+                                <td>
+                                    <img src="css/spacer_2px.png">
+                                </td>
+                                <td style="vertical-align: top">
+                                    <a href="./ios6/index.html" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" title="iOS 6 Simulator" class="ios6"><img alt="iOS 6 Simulator" src="css/ios6btn.png" onmouseover="this.src='css/ios6btn_hvr.png';" onmouseout="this.src='css/ios6btn.png';"></a>
+                                </td>
+                                <td>
+                                    <img src="css/spacer_2px.png">
+                                </td>
+                                <td style="vertical-align: top">
+                                    <a href="./xbox360/index.html" onmouseenter="document.getElementById('sfx_move').currentTime=0; document.getElementById('sfx_move').play();" onclick="document.getElementById('sfx_ok').currentTime=0; document.getElementById('sfx_ok').play();" title="XBOX 360 Gui Test" class="x360"><img alt="XBOX 360 Gui Test" src="css/x360btn.png" onmouseover="this.src='css/x360btn_hvr.png';" onmouseout="this.src='css/x360btn.png';"></a>
+                                </td>
+                                <td>
+                                    <img src="css/spacer_2px.png">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="right" width="12" height="79"></td>
+                </tr>
+            </table>
+        </navbar>
+        <main>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr class="welcome">
+                    <td width="407">
+                        <h1>Welcome!</h1>
+                        <h3>LATEST NEWS</h3>
+                        <p>Our website has been updated to a snazzy new layout! If there's any issues, please let us know!</p>
+                        <img src="css/separator_407_full.png">
+                        <p>An update for the iOS 6 Simulator is currently in development. New additions include Jiggle Mode, a fix for devices without a battery, missing Status Bar icons, a filesystem and more.</p>
+                        <img src="css/separator_407_full.png">
+                        <p>Our Roblox experiences are no longer being worked on. Those experiences are open source and free to use to anyone, and are available on our Resources GitHub repository and the Internet Archive.</p>
+                    </td>
+                    <td width="275">
+                        <h3>NOTICE</h3>
+                        <p>This page is not finalized and there are some placeholders and things that do not work. Please be patient while I finish this update.</p>
+                        <br/>
+                        <p>If your browser does not render this page properly, please let me know.</p>
+                        <br/>
+                        <p>I have spent over 10 hours working on this page so far. Please send help.</p>
+                        <br/>
+                        <p>Also here's the <a href="https://github.com/OSSimulation/Resources/blob/master/concepts/website/Website%20Concept%2017-08-2025.png?raw=true">concept art</a>.</p>
+                    </td>
+                </tr>
+                <tr height="1">
+                    <td>
+                        <img src="css/separator_407.png">
+                    </td>
+                    <td>
+                        <img src="css/separator_275.png">
+                    </td>
+                </tr>
+                <tr class="ios6sim">
+                    <td class="l">
+                        <img title="iOS 6 Simulator" alt="iOS 6 Simulator" src="css/ios6logo.png">
+                        <p>A recreation of iOS 6 in the Unity Engine.</p>
+                        <span><a href="./ios6/unity/index.html">⮞ Learn more</a> <a href="https://github.com/ossimulation/ios-6-simulator">⮞ Source code</a></span>
+                    </td>
+                    <td class="r" width="228">
+                        <img title="Placeholder" alt="Placeholder" src="css/placeholder.png">
+                    </td>
+                </tr>
+                <tr height="1">
+                    <td>
+                        <img src="css/separator_407.png">
+                    </td>
+                    <td>
+                        <img src="css/separator_275.png">
+                    </td>
+                </tr>
+                <tr class="osmenudet">
+                    <td>
+                        <h3>OS Menu</h3>
+                        <p>A custom menu based off the XBOX 360's Xbox Guide (NXE version). You can see an example of it on this website if you have a modern browser.  </p>
+                        <span><a href="#" onclick="openTryMe();">⮞ Try it out</a> <a href="https://github.com/ossimulation/resources/tree/master/rbxls/osmenu">⮞ Roblox version</a> <a href="https://github.com/ossimulation/os-menu">⮞ Unity version</a></span>
+                    </td>
+                    <td width="228">
+                        <img title="Placeholder" alt="Placeholder" src="css/placeholder.png">
+                    </td>
+                </tr>
+                <tr height="1">
+                    <td>
+                        <img src="css/separator_407.png">
+                    </td>
+                    <td>
+                        <img src="css/separator_275.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="l">
+                        <h1>OLD STUFF</h1>
+                    </td>
+                    <td class="r" width="228">
+                        <p>PLACEHOLDER</p>
+                    </td>
+                </tr>
+                <tr height="1">
+                    <td>
+                        <img src="css/separator_407.png">
+                    </td>
+                    <td>
+                        <img src="css/separator_275.png">
+                    </td>
+                </tr>
+                <tr class="osmenudet">
+                    <td>
+                        <h3>Windows XP Gui Test</h3>
+                        <p>A discontinued recration of Windows XP for Roblox.</p>
+                        <span><a href="./xbox360/index.html">⮞ Learn more</a> <a href="https://github.com/ossimulation/resources/tree/master/rbxls/winxp">⮞ Source code</a></span>
+                    </td>
+                    <td width="228">
+                        <h3>XBOX 360 Gui Test</h3>
+                        <p>An unfinished recration of the XBOX 360's Blades dashboard for Roblox. Taken down by Microsoft on the 4th of October, 2024 at 04:15 AEST.</p>
+                        <span><a href="./xbox360/index.html">⮞ Learn more</a> <a href="https://github.com/ossimulation/resources/tree/master/rbxls/x360">⮞ Source code</a></span>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="left" width="12" height="79"></td>
+                    <td class="middle" width="676" height="79">
+                        <p>This is a fan project. We are not affiliated with Microsoft or Apple in any way.</p>
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="626">
+                                    <span><a href="https://github.com/ossimulation">⮞ GitHub</a> <a href="https://youtube.com/@ossimulation">⮞ YouTube</a></span>
+                                </td>
+                                <td width="50">
+                                    <a href="https://github.com/ossimulation/ossimulation.github.io">Source</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="right" width="12" height="79"></td>
+                </tr>
+            </table>
+        </footer>
+    </container>
 </body>
-
 </html>

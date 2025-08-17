@@ -23,6 +23,15 @@ function check() {
     //document.getElementById("hider").className = "notif"
 }
 
+function openTryMe() {
+    if (!DontEvenBother) {
+        document.getElementById("osmenu").contentWindow.postMessage("0|This is a placeholder!","*")
+        document.getElementById("osmenu").className = "osmenu";
+    } else {
+        alert("Sorry, but your browser doesn't seem to support the OS Menu.");
+    }
+}
+
 function invalidCounter() {
     counter += 1;
     if (counter == 3) { // Used to be 10
