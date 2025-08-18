@@ -1,17 +1,5 @@
-@keyframes popupopen {
-    from {
-        width: 0%;
-        height: 0%;
-    }
-
-    to {
-        width: 80%;
-        height: 80%;
-    }
-}
-
 *{
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    font-family: "Lucida Grande", "Lucida Sans Unicode",  Verdana, Tahoma, Helvetica, Arial, sans-serif;
     padding: 0px;
     margin: 0px;
 }
@@ -100,3 +88,12 @@ footer .right {
     border: none;
     z-index: -99;
 }
+
+
+@font-face {
+    font-family: 'Lucida Grande';
+    font-style: normal;
+    font-weight: normal;
+    src: url('LucidaGrande.ttf');
+}
+
