@@ -4,6 +4,10 @@
     margin: 0px;
 }
 
+a > img{
+    border: 0;
+}
+
 html {
     background: url(tile.png);
 }
