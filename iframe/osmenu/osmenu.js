@@ -4,11 +4,14 @@
 // OS Menu v2 (HTML version), Thomasluigi07 2024 (this is a reference to the old os menu main script haha only real os simulation fans will get this one....)
 //
 // Check for newer browsers. This is used to make sure older browsers can view the webpage... NOT!
+var OSMENUEnabled = false;
 function check() {
     try {
-        var ThisIsNotUsedLmao = window.crossOriginIsolated
+        var ThisIsNotUsedLmao = window.crossOriginIsolated;
+        OSMENUEnabled = true;
     }
-    catch {
+    catch (error) {
+        OSMENUEnabled = false;
         return // Use non-existent non-interactive version. Why? Because I'm LAAAAZY!!!
     }
     // document.getElementById("hider").className = "notif"
@@ -96,37 +99,38 @@ function hudclose(){
     }, 190);
 }
 
-window.addEventListener( // You can probably hook into this if you embed the OS Menu into your own site! (for some reason...)
-    "message",
-    (event) => {
-        if (Array.from(event.data)[0] == "0") {
-            hudopen();
-            document.getElementById('text').innerText = event.data.substring(2);
-        } else if (Array.from(event.data)[0] == "1") {
-            hudclose();
-            document.getElementById('text').innerText = event.data.substring(2);
-        } else if (Array.from(event.data)[0] == "9") {
-            hudopen();
-            document.getElementById('text').innerText = event.data.substring(2);
-            setTimeout(function(){
-                document.getElementById('backbtn').className = 'invisible'
-            }, 195);   
-            setTimeout(function(){
-                document.getElementById('sfx_kick').currentTime=0;
-                document.getElementById('sfx_kick').play();    
-            }, 300);     
-            setTimeout(() => {
-                window.parent.postMessage("9","*")
-            }, 2850);   
-        } else {
-            console.error("Invalid message data!");
-        }
-    },
-    false,
-);
-
-
 window.addEventListener('DOMContentLoaded', () => {
     check();
+
+    if (OSMENUEnabled) {
+        window.addEventListener( // You can probably hook into this if you embed the OS Menu into your own site! (for some reason...)
+        "message",
+        (event) => {
+            if (Array.from(event.data)[0] == "0") {
+                hudopen();
+                document.getElementById('text').innerText = event.data.substring(2);
+            } else if (Array.from(event.data)[0] == "1") {
+                hudclose();
+                document.getElementById('text').innerText = event.data.substring(2);
+            } else if (Array.from(event.data)[0] == "9") {
+                hudopen();
+                document.getElementById('text').innerText = event.data.substring(2);
+                setTimeout(function(){
+                    document.getElementById('backbtn').className = 'invisible'
+                }, 195);
+                setTimeout(function(){
+                    document.getElementById('sfx_kick').currentTime=0;
+                    document.getElementById('sfx_kick').play();
+                }, 300);
+                setTimeout(() => {
+                    window.parent.postMessage("9","*")
+                }, 2850);
+            } else {
+                console.error("Invalid message data!");
+            }
+        },
+        false,
+        );
+    }
     // Do this because js is an idiot and does not wait for the webpage to load. I don't even wanna know if this breaks on some rare cases.
 });

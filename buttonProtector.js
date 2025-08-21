@@ -69,11 +69,11 @@ function invalidCounter() {
             document.getElementById("osmenu").className = "osmenu";    
         } else {
             alert("You asked for this, and now you are going to be kicked out. Bye bye!");
-            document.getElementById("sfx_kick").play()
-            setTimeout(() => {
+            setTimeout(function() {
                 document.body.remove();
                 window.location.replace("http://www.thomasluigi07.com");
-            }, 5000);        
+            }, 5000);
+            document.getElementById("sfx_kick").play();
         }
     }
 }
@@ -87,20 +87,22 @@ function openPopup(msg) {
     }
 }
 
-window.addEventListener(
-    "message",
-    (event) => {
-        if (event.data == "0") {
-            document.getElementById("osmenu").className = "osmenuclosed";
-        } else if (event.data == "9") {
-            document.body.remove();
-            window.location.replace("http://www.thomasluigi07.com");
-        }
-    },
-    false,
-);
-
 check();
+
+if (!DontEvenBother) {
+    window.addEventListener(
+        "message",
+        (event) => {
+            if (event.data == "0") {
+                document.getElementById("osmenu").className = "osmenuclosed";
+            } else if (event.data == "9") {
+                document.body.remove();
+                window.location.replace("http://www.thomasluigi07.com");
+            }
+        },
+        false,
+    );
+}
 
 window.addEventListener('DOMContentLoaded', () => {
     check(); // Looks like I COMPLETELY FORGOT TO CHECK IF THE PAGE LOADED FIRST. Whoops!!!!
