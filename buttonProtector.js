@@ -6,7 +6,7 @@ function check() {
         var ThisIsNotUsedLmao = window.crossOriginIsolated;
         DontEvenBother = false;
     }
-    catch {
+    catch (error) {
         // Use alerts. Remove iframe.
         DontEvenBother = true;
         var child = document.getElementById("osmenu");
