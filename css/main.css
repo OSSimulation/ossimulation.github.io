@@ -8,7 +8,7 @@ html {
     background: url(tile.png);
 }
 
-container {
+.container {
     display: block;
     margin: auto;
     margin-top: 10px;
@@ -18,21 +18,21 @@ container {
     width: 700px;
 }
 
-navbar .left {
+.navbar .left {
     background: url(top_left.png);
 }
-navbar .middle {
+.navbar .middle {
     width: 676px;
     background: url(top_middle.png);
     background-size: 100% 100%;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
-navbar .right {
+.navbar .right {
     background: url(top_right.png);
 }
 
-main {
+.main {
     background: white;
     display: block;
     border: #9f9d9f solid 2px;
@@ -44,14 +44,14 @@ main {
     padding: 5px;
 }
 
-main .welcome, main .ios6sim, main .osmenudet {
+.main .welcome, .main .ios6sim, .main .osmenudet {
     vertical-align: top;
 }
 
-footer .left {
+.footer .left {
     background: url(bottom_left.png);
 }
-footer .middle {
+.footer .middle {
     background: url(bottom_middle.png);
     background-size: 100% 100%;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
@@ -59,7 +59,7 @@ footer .middle {
     color: white;
     vertical-align: bottom;
 }
-footer .right {
+.footer .right {
     background: url(bottom_right.png);
 }
 
