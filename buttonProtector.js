@@ -1,23 +1,24 @@
-var counter = 0;
-var DontEvenBother = true; // Don't you love a browser check not even functioning? It turns out anyways I DIDN'T EVEN CHECK IF THE PAGE WAS LOADED ORIGINALLY. I should be banned from programming.
+var propertyDamage = 0;
+var dontEvenBother = true; // Don't you love a browser check not even functioning? It turns out anyways I DIDN'T EVEN CHECK IF THE PAGE WAS LOADED ORIGINALLY. I should be banned from programming.
 
-function callback() {
-    DontEvenBother = false;
-}
-
-function check() {
+function compatCheck(debug) {
     try {
         var ThisIsNotUsedLmao = window.crossOriginIsolated;
-        DontEvenBother = false;
+        dontEvenBother = false;
     }
     catch (error) {
         // Use alerts. Remove iframe.
+    }
+
+    if (debug == true) {
+        dontEvenBother = true;
+        console.log("Not bothering at all anymore!");
     }
     //document.getElementById("hider").className = "notif"
 }
 
 function openTryMe() {
-    if (!DontEvenBother) {
+    if (!dontEvenBother) {
         document.getElementById("osmenu").contentWindow.postMessage("0|This is a placeholder!","*")
         document.getElementById("osmenu").className = "osmenu";
     } else {
@@ -26,38 +27,38 @@ function openTryMe() {
 }
 
 function invalidCounter() {
-    counter += 1;
-    if (counter == 3) { // Used to be 10
+    propertyDamage += 1;
+    if (propertyDamage == 3) { // Used to be 10
         //document.getElementById("osmenu").contentWindow.targetFunction(hudopen())
-        if (!DontEvenBother) {
+        if (!dontEvenBother) {
             document.getElementById("osmenu").contentWindow.postMessage("0|Hey there, you can't click on this button. Stop trying, it won't get you anywhere.","*")
             document.getElementById("osmenu").className = "osmenu";
         } else {
             alert("Hey there, you can't click on this button. Stop trying, it won't get you anywhere.");
         }
-    } else if (counter == 6) { // 20
-        if (!DontEvenBother) {
+    } else if (propertyDamage == 6) { // 20
+        if (!dontEvenBother) {
             document.getElementById("osmenu").contentWindow.postMessage("0|Please stop. It's not going to do anything, and you might break it.","*")
             document.getElementById("osmenu").className = "osmenu";
         } else {
             alert("Please stop. It's not going to do anything, and you might break it.");
         }
-    } else if (counter == 9) { // 30
-        if (!DontEvenBother) {
+    } else if (propertyDamage == 9) { // 30
+        if (!dontEvenBother) {
             document.getElementById("osmenu").contentWindow.postMessage("0|The button is in immense pain right now. The poor thing is screaming in pain because you keep pressing it, so STOP, you MONSTER!","*")
             document.getElementById("osmenu").className = "osmenu";
         } else {
             alert("The button is in immense pain right now. The poor thing is screaming in pain because you keep pressing it, so STOP, you MONSTER!");
         }
-    } else if (counter == 12) { // 40
-        if (!DontEvenBother) {
+    } else if (propertyDamage == 12) { // 40
+        if (!dontEvenBother) {
             document.getElementById("osmenu").contentWindow.postMessage("0|Alright, I've had enough. I'm going to have to make you leave if you keep doing this.","*")
             document.getElementById("osmenu").className = "osmenu";
         } else {
             alert("Alright, I've had enough. I'm going to have to make you leave if you keep doing this.");
         }
-    } else if (counter >= 15) { // 50
-        if (!DontEvenBother) {
+    } else if (propertyDamage >= 15) { // 50
+        if (!dontEvenBother) {
             document.getElementById("osmenu").contentWindow.postMessage("9|You asked for this, and now you are going to be kicked out. Bye bye!","*")
             document.getElementById("osmenu").className = "osmenu";
         } else {
@@ -71,8 +72,8 @@ function invalidCounter() {
     }
 }
 
-function openPopup(msg) {
-    if (!DontEvenBother) {
+function customAlert(msg) {
+    if (!dontEvenBother) {
         document.getElementById("osmenu").contentWindow.postMessage("0|" + msg,"*")
         document.getElementById("osmenu").className = "osmenu";
     } else {
@@ -80,9 +81,9 @@ function openPopup(msg) {
     }
 }
 
-check();
+compatCheck();
 
-if (!DontEvenBother) {
+if (!dontEvenBother) {
     window.addEventListener(
         "message",
         (event) => {
@@ -102,5 +103,12 @@ if (!DontEvenBother) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    check(); // Looks like I COMPLETELY FORGOT TO CHECK IF THE PAGE LOADED FIRST. Whoops!!!!
+    compatCheck(); // Looks like I COMPLETELY FORGOT TO CHECK IF THE PAGE LOADED FIRST. Whoops!!!!
 });
+
+window.invalidCounter = invalidCounter;
+window.customAlert = customAlert;
+window.openTryMe = openTryMe;
+window.compatCheck = compatCheck;
+window.propertyDamage = propertyDamage;
+window.dontEvenBother = dontEvenBother;
