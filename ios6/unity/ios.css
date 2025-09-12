@@ -218,7 +218,8 @@ body.specs #main { font-size:1em; line-height:1.4286em; }
 
 .overview  #pn-overview a,
 .whats-new #pn-whats-new a,
-.what-is   #pn-what-is a { color:#999 !important; cursor:default; }
+.what-is   #pn-what-is a,
+.overview  #pn-what-is a { color:#999 !important; cursor:default; }
 
 
 /* Footers
