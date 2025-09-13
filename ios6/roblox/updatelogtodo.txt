@@ -1,24 +1,26 @@
+NOTE : BUILD NUMBERS BEFORE GROUP MERGE WERE NOT LOGGED AT ALL. TOTAL BUILD COUNT: 313 (103 on main, 210 on group)
+
 Thomas
  — 
-12/03/2022, 00:19
+12/03/2022, 00:19 (INTERNAL BUILD 8, ACTUAL BUILD 111)
 @iOS 6 updates Fixed date and time for 12:00 AM
 
 Thomas
  — 
-18/03/2022, 15:31
+18/03/2022, 15:31 (INTERNAL BUILD 16, ACTUAL BUILD 119)
 @iOS 6 updates 
 Setup is being worked on
 
 Thomas
  — 
-02/04/2022, 12:35
+02/04/2022, 12:35 (INTERNAL BUILD 27, ACTUAL BUILD 130)
 @Windows XP Gui Test Publish Notifications  @iOS 6 updates 
 Changed game name and description back to normal.
 (WINXP ONLY) If it is still April 1st for you, the game will still have the text strings. 
 
 Thomas
  — 
-12/04/2022, 13:18
+12/04/2022, 13:18 (INTERNAL BUILD 42, ACTUAL BUILD 145)
 @iOS 6 updates 
 iOS 6 has been made private as
 - there is literally no functionality
@@ -26,13 +28,13 @@ The game will come back later today when i work on it.
 
 Thomas
  — 
-14/04/2022, 15:39
+14/04/2022, 15:39 (INTERNAL BUILD 48, ACTUAL BUILD 151)
 iOS 6 is still being worked on.
 
 Thomas
  — 
-17/05/2022, 22:48
-@iOS 6 updates  (build 64)
+17/05/2022, 22:48 (INTERNAL BUILD 64, ACTUAL BUILD 167)
+@iOS 6 updates
 - IOS 6 IS BACK!
 - Added Test App (woah, you can actually open an app now!)
 (there's still not much, and a lot of bugs so please report them in 
@@ -41,7 +43,7 @@ Thomas
 Thomas
  — 
 18/05/2022, 19:35
-@iOS 6 updates (build 78)
+@iOS 6 updates (INTERNAL BUILD 78, ACTUAL BUILD 171)
 - the button in test app now changes which Page it is on
 - Added Carrier. To change the Carrier name, open the Test app, and change the box that has it there.
 - Pressing the Power button while an app is open no longer closes the app
@@ -52,7 +54,7 @@ Thomas
 Thomas
  — 
 28/05/2022, 14:25
-@iOS 6 updates  (build 85)
+@iOS 6 updates  (INTERNAL BUILD 85, ACTUAL BUILD 188)
 - added WIP and DEVICE buttons from Windows XP Gui Test
 - enabled auto translation and text capture
 - removed carrier text changing
@@ -61,20 +63,20 @@ Thomas
 Thomas
  — 
 29/05/2022, 19:25
-@iOS 6 updates (build 87)
+@iOS 6 updates (INTERNAL BUILD 87, ACTUAL BUILD 190)
 - Removed Feedback
 - Changed Size of Custom Topbar elements
 
 Thomas
  — 
 30/05/2022, 14:15
-@iOS 6 updates (build 88)
+@iOS 6 updates (INTERNAL BUILD 88, ACTUAL BUILD 191)
 - Fixed Test App not launching
 
 Thomas
  — 
 16/07/2022, 18:48
-@iOS 6 updates  (build 100)
+@iOS 6 updates  (INTERNAL BUILD 100, ACTUAL BUILD 203)
 - Added Setup
 - Added cool new anims to the home button appearing thingy
 - Home button only appears after completing Setup
@@ -83,20 +85,20 @@ Thomas
 Thomas
  — 
 18/07/2022, 22:04
-@iOS 6 updates  (build 106)
+@iOS 6 updates  (INTERNAL BUILD 103, ACTUAL BUILD 206)
 - Added animation to the "slide to unlock" and "slide to set up" dialog to make it more accurate
 
 Thomas
  — 
 28/09/2022, 12:46
-@iOS 6 updates (build 116,v1)
+@iOS 6 updates (INTERNAL BUILD 116, ACTUAL BUILD 219)
 - Added help text on how to use the sliders on PC
 - Bug fixes.
 
 Thomas
  — 
 10/11/2022, 11:58
-@iOS 6 updates  (build 122) (sorry for repost, someone deleted the message)
+@iOS 6 updates  (INTERNAL BUILD 122, ACTUAL BUILD 225)
 - The OS Menu has been added to iOS 6.
 - Roblox menu button has now been replaced with the OS Menu on Mobile and PC.
 - Added the "Other Games" button to the OS Menu, where you can join other games made by The OS Simulation Project.
@@ -111,7 +113,7 @@ Thomas
 Thomas
  — 
 15/11/2022, 19:43
-@iOS 6 updates   (build 165)
+@iOS 6 updates   (INTERNAL BUILD 165, ACTUAL BUILD 268)
 Wow, an actual update!
 - Added rounded corners to improve accuracy
 - StatusBar is now opaque during setup
@@ -131,7 +133,7 @@ Fun Fact: This update took 8 hours to develop :LuigiBeingShot:
 Thomas
  — 
 16/11/2022, 15:21
-@iOS 6 updates (build 170)
+@iOS 6 updates (INTERNAL BUILD 170, ACTUAL BUILD 273)
 - Removed profile button from the main page of the OS Menu, you can still access your profile from the Players page
 - Added an "Invite Friends" button to the Players page
 - Re-organised buttons on the main page
@@ -140,8 +142,19 @@ Thomas
 Thomas
  — 
 26/11/2022, 11:26
-@iOS 6 updates  (build 173)
+@iOS 6 updates  (INTERNAL BUILD 173, ACTUAL BUILD 276)
 - Added the Achievement Page to the OS Menu, where you can see your badges in the games. (Since iOS 6 doesn't have any yet, there isn't any achievements to show there. they will be added soon)
 - Added an Achievement popup for when you get a badge in-game.
 - Re-added the Profile button to the OS Menu
 - Leave Game Button is no longer inside of a scrolling frame, and now can always be accessed even if the OS Menu is too small to show the Leave Game button without scrolling.
+
+
+UNDOCUMENTED UPDATES:
+INTERNAL BUILD 200, ACTUAL BUILD 303
+- UPDATED OS MENU TO SUPPORT NEW FRIENDS API (25/09/2024)
+
+INTERNAL BUILD 209, ACTUAL BUILD 312
+- LAST BUILD BEFORE CONTENT DELETED (30/09/2024)
+
+INTERNAL BUILD 210, ACTUAL BUILD 313
+- FINAL BUILD (04/10/2024)
