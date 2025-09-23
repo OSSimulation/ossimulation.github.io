@@ -29,8 +29,8 @@ html {
     width: 676px;
     background: url(top_middle.png);
     background-size: 100% 100%;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='top_middle.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='top_middle.png', sizingMethod='scale')";
 }
 .navbar .right {
     background: url(top_right.png);
@@ -58,8 +58,8 @@ html {
 .footer .middle {
     background: url(bottom_middle.png);
     background-size: 100% 100%;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bottom_right.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bottom_right.png', sizingMethod='scale')";
     color: white;
     vertical-align: bottom;
 }
