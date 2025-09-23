@@ -24,6 +24,8 @@ html {
 
 .navbar .left {
     background: url(top_left.png);
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='top_left.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='top_left.png', sizingMethod='scale')";
 }
 .navbar .middle {
     width: 676px;
@@ -34,6 +36,8 @@ html {
 }
 .navbar .right {
     background: url(top_right.png);
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='top_right.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='top_right.png', sizingMethod='scale')";
 }
 
 .main {
@@ -54,6 +58,8 @@ html {
 
 .footer .left {
     background: url(bottom_left.png);
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bottom_left.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bottom_left.png', sizingMethod='scale')";
 }
 .footer .middle {
     background: url(bottom_middle.png);
@@ -65,6 +71,8 @@ html {
 }
 .footer .right {
     background: url(bottom_right.png);
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bottom_right.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bottom_right.png', sizingMethod='scale')";
 }
 
 .osmenu {
