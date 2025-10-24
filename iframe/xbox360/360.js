@@ -47,27 +47,38 @@ function hudopen(){
     document.getElementById('sfx_HUDopen').currentTime=0;
     document.getElementById('sfx_HUDopen').play();
     document.getElementById('hud').className = 'hudin';
-    document.getElementById('hudbg').className = 'hudbg';
+    document.getElementById('hudbg').className = 'hudbgin';
     setTimeout(function(){
         document.getElementById('hud').className = 'hud';
-        document.getElementById('backbtn').className = 'backbtn'
+    }, 245);
+    setTimeout(function(){
+        document.getElementById('hudbg').className = 'hudbgin_fade';
         document.getElementById('ytpreview').className = 'preview';
         document.getElementById('hudtitle').className = 'hudtitle';
-    }, 190);
+        document.getElementById('backbtn').className = 'backbtn'
+    }, 700)
 }
 
 function hudclose(){
     backsound();
-    document.getElementById('sfx_HUDclose').currentTime=0;
-    document.getElementById('sfx_HUDclose').play();
-    document.getElementById('hud').className = 'hudout';
-    document.getElementById('backbtn').className = 'invisible'
-    document.getElementById('ytpreview').className = 'invisible';
-    document.getElementById('hudtitle').className = 'invisible';
+    document.getElementById('backbtn').className = 'backbtn_fade'
+    document.getElementById('ytpreview').className = 'preview_fade';
+    document.getElementById('hudtitle').className = 'hudtitle_fade';
+    setTimeout(function(){
+        document.getElementById('backbtn').className = 'invisible'
+        document.getElementById('ytpreview').className = 'invisible';
+        document.getElementById('hudtitle').className = 'invisible';
+    }, 245);
+    setTimeout(function(){
+        document.getElementById('sfx_HUDclose').currentTime=0;
+        document.getElementById('sfx_HUDclose').play();
+        document.getElementById('hud').className = 'hudout';
+        document.getElementById('hudbg').className = 'hudbgout';
+    }, 255);
     setTimeout(function(){
         document.getElementById('hud').className = 'invisible';
         document.getElementById('hudbg').className = 'invisible';
-    }, 190);
+    }, 490);
 }
 
 

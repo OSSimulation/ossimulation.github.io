@@ -38,6 +38,58 @@
     }
 }
 
+
+@keyframes hudbgin {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.7;
+    }
+}
+
+@keyframes hudbgin_fade {
+    from {
+        opacity: 0.7;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hudbgout {
+    from {
+        opacity: revert;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 iframe {
     position: fixed;
     left: 0px;
@@ -53,6 +105,22 @@ iframe {
     width: 64%;
     height: 64%;
     top: 14%;
+    animation-name: fadein;
+    animation-timing-function: ease-in;
+    animation-duration: 0.25s;
+}
+
+.preview_fade {
+    z-index: 1000000 !important;
+    position: fixed;
+    left: 2.5%;
+    width: 64%;
+    height: 64%;
+    top: 14%;
+    opacity: 0;
+    animation-name: fadeout;
+    animation-timing-function: ease-out;
+    animation-duration: 0.25s;
 }
 
 .backbtn {
@@ -311,6 +379,30 @@ iframe {
     color: white;
     font-weight: bold;
     font-size: 90%;
+    animation-name: fadein;
+    animation-timing-function: ease-in;
+    animation-duration: 0.25s;
+}
+
+.backbtn_fade {
+    background: linear-gradient(180deg, #464646 0%, #1c1c1c 30%, #000 100%);
+    background-color: #1c1c1c;
+    border-style: solid;
+    border-color: #4f4f4f;
+    border-radius: 5px;
+    border-width: 2px;
+    width: 9%;
+    height: 7%;
+    top: 82%;
+    left: 2.5%;
+    position: fixed;
+    color: white;
+    font-weight: bold;
+    font-size: 90%;
+    opacity: 0;
+    animation-name: fadeout;
+    animation-timing-function: ease-out;
+    animation-duration: 0.25s;
 }
 
 .backbtn button:active, .backbtn button:focus, .backbtn button:hover {
@@ -333,8 +425,8 @@ iframe {
     position: fixed;
     z-index: 11;
     animation-name: hudin;
-    animation-timing-function: linear;
-    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    animation-duration: 0.25s;
 }
 
 .hud {
@@ -354,8 +446,8 @@ iframe {
     position: fixed;
     z-index: 11;
     animation-name: hudout;
-    animation-timing-function: linear;
-    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+    animation-duration: 0.25s;
 }
 
 .hudbg {
@@ -367,6 +459,45 @@ iframe {
     z-index: 10;
 }
 
+.hudbgin {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 10;
+    opacity: 0.7;
+    animation-name: hudbgin;
+    animation-timing-function: ease-in;
+    animation-duration: 0.25s;
+}
+
+.hudbgin_fade {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 10;
+    opacity: 1;
+    animation-name: hudbgin_fade;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+.hudbgout {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 10;
+    opacity: 1;
+    animation-name: hudbgout;
+    animation-timing-function: ease-in;
+    animation-duration: 0.25s;
+}
+
 .hudtitle {
     top: 5%;
     left: 2.5%;
@@ -375,4 +506,21 @@ iframe {
     font-weight: normal;
     color: white;
     font-size: 150%;
+    animation-name: fadein;
+    animation-timing-function: ease-in;
+    animation-duration: 0.25s;
+}
+
+.hudtitle_fade {
+    top: 5%;
+    left: 2.5%;
+    position: fixed;
+    z-index: 12;
+    font-weight: normal;
+    color: white;
+    font-size: 150%;
+    opacity: 0;
+    animation-name: fadeout;
+    animation-timing-function: ease-out;
+    animation-duration: 0.25s;
 }
