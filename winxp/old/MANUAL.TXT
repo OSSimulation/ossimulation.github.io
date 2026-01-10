@@ -15,13 +15,14 @@ This manual is recommended to be read with a fixed-width font.
 - 1.  Getting Started   -
 - 2.  The Desktop       -
 - 3.  ROBLOX in Roblox  -
-- 4.  The OS Menu       -
-- 5.  Achievements      -
-- 6.  VR Mode           -
-- 7.  Updates           -
-- 8.  Troubleshooting   -
-- 9.  Admin Tools       -
-- 10. Credits           -
+- 4.  Roblox Messenger  -
+- 5.  The OS Menu       -
+- 6.  Achievements      -
+- 7.  VR Mode           -
+- 8.  Updates           -
+- 9.  Troubleshooting   -
+- 10.  Admin Tools      -
+- 11. Credits           -
 -------------------------
 
 # 1. Getting Started
@@ -109,17 +110,17 @@ Like earlier, the numbers in brackets correspond to info about
 the object.
 
 -------------------------------------------------
-| |_|  <-(5)                          (16)-> OS |
+| |_|  <-(5)                          (17)-> OS |
 | :-)  <-(6)                                    |
 |  e   <-(7)                                    |
-| [t]  <-(8)                                    |
+| [t]  <-(8)                                    |currently
 | <r>  <-(9)                                    |
 | C:/  <-(10)              (1)                  |
 | [O]  <-(11)                          ______   |
 |  R   <-(12)                         /__/__/   |
-| OS   <-(13)                   TOSP /__/__/    |
-|  O   <-(14)                    Windows XP     |
-|  H   <-(15)                    Gui Test       |
+| OS   <-(13)   ________________TOSP /__/__/    |
+|  O   <-(14)   |     (16)     | Windows XP     |
+|  H   <-(15)   |______________| Gui Test       |
 |_______________________________________________|
 |#start|<-(3)         (2)         (4)->|10:30 AM|
 -------------------------------------------------
@@ -170,9 +171,13 @@ Allows you to enable or disable the OS Menu.
 Teleports you to & from the Debug Place.
 (15) - Half-Life
 Launches the Half-Life Launcher. Only available in the debug place.
-(16) - OS Menu
-If the OS Menu is enabled, clicking on the OS button will open or close
-the menu.
+(16) - Xbox 360 Accessories
+If a controller is connected, this will appear to let you know that
+controller support is on. This window cannot be closed due to a bug
+and will not disappear until you disconnect your controller.
+(17) - OS Menu
+If the OS Menu is enabled, clicking on the OS button will open or
+close the menu.
 
 Clicking on the Start Button (3) will open up the Start Menu.
 Below is a heavily simplified Start Menu. 
@@ -204,10 +209,14 @@ computer at a glance.
 (4) - Shut Down
 Opens the Power Options menu, where you can choose
 if you wish to shut down the computer or cancel.
-
+messagesMessenger
 # 3. ROBLOX in Roblox
 
 NOTE: ROBLOX is not available in VR Mode.
+
+NOTE: As Roblox updates have changed how the chat system works,
+you are now unable to send messages to other players unless it is
+updated to use the new chat APIs.
 
 Clicking on the ROBLOX shortcut anywhere will immediately open the
 simulated Roblox screen. You will see a screen showing the bricks
@@ -215,8 +224,8 @@ and snaps build into place.
 
 -------------------------------------------------
 |  |_|      ________________________         OS |
-|  :-)     /R ROBLOX       [_][O][X]\           |
-|   e      |------------------------|           |
+|  :-)     /R_ROBLOX_______[-][O][X]\           |
+|   e      |_____|_____|_____|      |           |
 |  [t]     |   __________________   |           |
 |  <r>     |  |                  |  |           |
 |  C:/     |  | Bricks:0 Snaps:0 |  |           |
@@ -232,6 +241,12 @@ and snaps build into place.
 If you are on Mobile however, this screen will not be displayed
 and simply skip loading due to performance
 issues.
+
+NOTE: If you are using the Debug version of Windows XP Gui Test,
+your character will be invisible unless you click on the
+Fullscreen button. This is because all Roblox characters were
+replaced with Gordon Freeman and are not visible in the
+windowed version.
 
 Once the Place has finished loading, you will find yourself
 in the Crossroads. In this land you can choose to "BLOX" (fight)
@@ -287,11 +302,14 @@ Enables/disables Fullscreen mode.
 (5) - Exit
 Exits ROBLOX.
 (6) - Player List
-Lists all players that are currently connected to the server.
-Your username will always be at the top of the playerlist, while
-other players will be listed in the order they joined the server.
+Lists all players that are currently connected to the Roblox server.
+This does not include players who are not currently playing Roblox
+and are just on the desktop.
+Your username will always be at the top of the playerlist, while other
+players will be listed in the order they joined the server.
 (7) - Chat Container
 Displays current chat messages from this game server.
+Some players have special tags before their name, see #4 for more info.
 NOTE: Does not list messages sent in the ROBLOX Messenger
 application. Chat is not available on XBOX or Playstation.
 (8) - Game Area
@@ -312,3 +330,163 @@ The ^ and v buttons pan the camera up and down, while the
 (13) - Chat box
 Type a message to send to other players.
 NOTE: Chat is not available on XBOX or Playstation.
+
+# 4. Roblox Messenger
+
+NOTE: As Roblox updates have changed how the chat system works,
+you are now unable to send messages using Roblox Messenger
+unless it is updated to use the new chat APIs.
+
+NOTE: Roblox Messenger is not available on XBOX or Playstation.
+
+Roblox Messenger lets you comminucate with other players connected
+to the same game server as you. Any message you send automatically
+sends a notification to anyone not actively using the chat.
+
+NOTE: This used to be called MSN Messenger in older versions, but was
+renamed out of fears that Roblox would ban the game for mentioning MSN,
+as it was a chat platform.
+
+You cannot direct message players, and chat logs are not kept if you
+leave the game server. You cannot message players that are connected
+to different game servers.
+
+When first opening Roblox Messenger, you will be prompted to log in,
+as shown below. Simply click on "Click here to login" to instantly
+log in and begin messaging other players.
+
+-------------------------------------------------
+|  |_|      _____________                    OS |
+|  :-)     /)_RO_Mesg_[X]\                      |
+|   e      |F._Ac._To._H.|                      |
+|  [t]     |_____________|                      |
+|  <r>     |             |                      |
+|  C:/     | R Click here|                      |
+|  [O]     |_____________|            ______    |
+|   R      |             |           /__/__/    |
+|  OS      |             |          /__/__/     |
+|   O      |             |       Windows XP     |
+|   H      |_____________|       Gui Test       |
+|_______________________________________________|
+|#start||) RMesg.|                     |10:30 AM|
+-------------------------------------------------
+
+Once logged in, the chat window will automatically open, and the
+main window will list all players that are currently connected
+to the game server. Below is a slimmed down version of the
+chat window and main window.
+
+NOTE: The File, Action, Tools and Help menu do not function.
+
+-------------------------------------------------
+|  |_|____________  _________________________OS |
+|  :/)_RO_Mesg_[X]\/M_ROBLOX_Conversation___[X]\|
+|   |F._Ac._To._H.||File_Actions_Tools_Help____||
+|  [|    My Status||To:_Everyone_______ |Ch_S__||
+|  <| ___Username_|||Person: messag    ||Other_||
+|  C| Player List |||Dude: test test   ||I_w_to||
+|  [|  Username   |||Username: hello   ||Rules_||
+|   |  Dude  (1)  |||[C]Thomas: aaaaaa ||      ||
+|  O|  Person     |||------------------|| (11) ||
+|   |__Thomas_____|||________(8)_______||      ||
+|   |_(2)_________||____________________|______||
+|_______________________________________________|
+|#start||) RMesg.|M RConv.|            |10:30 AM|
+-------------------------------------------------
+
+(2) - I want to...
+_______________________________
+|(v)_I_want_to...______________|
+| + Add a Friend            (3)|
+| R Send an Instant Message (4)|
+| F Send a File or Photo    (5)|
+| C Invite a Friend         (6)|
+|_M_Go_to_Chat______________(7)|
+
+(8) Chat Window
+ _________________________________
+| To: Everyone                    |
+|_________________________________|
+|[Creator] Thomas: aaaaaaaaa      |
+|Username: This is a message about|
+| something cool I guess   (9)    |
+|Dude: ok                         |
+|Person: You should type del in   |
+| command prompt and press Y dude |
+|Dude: wth no thats just gonna    |
+|_delete_my_system________________|
+| Breaking ROBLOX's ToS can get   |
+|_you_banned._Keep_chat_clean_etc.|
+| Click here to chat...           |
+|                         (10)    |
+|_________________________________|
+
+
+(1) - Player List
+Lists all players currently connected to the game server. This
+also includes players currently playing Roblox.
+(2) - I want to...
+Lists quick actions. Not able to be collapsed.
+(3) - Add a Friend
+Not implemented
+Send a player a friend request.
+(4) - Send an Instant Message
+Not implemented
+Send a player a private message that only you and that player
+can see.
+(5) - Send a File or Photo
+Not implemented
+Send a Roblox decal or audio in chat.
+(6) - Invite a Friend
+Opens the Invite Friends popup where you can invite players
+to join you in Windows XP Gui Test.
+(7) - Go to Chat
+Re-opens the chat window if you have closed it.
+(8) - Chat Window
+Contains the message log, a notification to not break Roblox ToS and
+the text input to send a message.
+(9) - Message Log
+View the most recent messages sent by other players.
+
+Some players have special tags behind their name, indicating their rank
+on our group. Here is a table of all chat tags, including removed ones.
+If you see someone who claims to be a developer, check to see if they
+have the Contributor or Creator tag. You can also check what rank they
+have using the OS Menu.
+ ___________________________
+|_Chat_Tag________|_Active?_|
+|_Tester__________|_No______|
+|_Cool_People_____|_Yes_____|
+|_Trial_Admin_____|_No______|
+|_Admin___________|_No______|
+|_Developer_______|_No______|
+|_Creator_________|_Yes_____|
+|_Contributor_____|_Yes_____|
+
+(10) - Text Input
+Type a message to send to all players in the game server.
+(11) - Chat Sidebar
+Not implemented
+Lets you configure Chat Settings and view the chat rules, and also access
+some quick actions.
+
+WARNING: This game logs your chat messages and if you say anything that
+bypasses Roblox's chat filter, you may be manually permamently banned from
+this game. The game developer can also choose to log chat messages using
+leftover webhook code.
+
+TBD
+
+# 11. Credits
+
+and now... The Windows XP Gui Test Credits!
+
+Thomasluigi07 - Creator
+TersisWilvin/9T2K - Made Roblox Messenger, most 2.0 UIs and some other things
+Karbis - Fixed some scripts
+robloxandtyler - Assisted with Roblox?
+Zylon1337 - Did stuff for Roblox
+MariotheDuck123 - Did stuff
+SpyNaz - GUI Dragging module
+Zomebody - Input Detection Script
+Lobestone - iPad/iPhone Keyboard Support
