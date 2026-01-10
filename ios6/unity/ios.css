@@ -218,8 +218,7 @@ body.specs #main { font-size:1em; line-height:1.4286em; }
 
 .overview  #pn-overview a,
 .whats-new #pn-whats-new a,
-.what-is   #pn-what-is a,
-.overview  #pn-what-is a { color:#999 !important; cursor:default; }
+.what-is   #pn-what-is a { color:#999 !important; cursor:default; }
 
 
 /* Footers
@@ -285,7 +284,7 @@ ol.sosumi { width:898px; margin:18px auto; }
 #whats-new figcaption.three-up li.first { margin-left:0; }
 #whats-new figcaption.three-up li.last { margin-left:78px; *margin-left:87px;}
 
-#whats-new .section { margin:0 -50px 50px; padding:66px 50px 0; background:url(https://web.archive.org/web/20121105213651im_/http://images.apple.com/v/ios/shared/what-is/a/images/divider.jpg) 0 0 no-repeat; zoom:1; }
+#whats-new .section { margin:0 -50px 50px; padding:66px 50px 0; background:url(./divider.jpg) 0 0 no-repeat; zoom:1; }
 #whats-new .top-content { margin-left:24px; width:635px; }
 #whats-new .top-content h1 { margin-bottom:20px; }
 
