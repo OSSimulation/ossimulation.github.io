@@ -21,7 +21,7 @@ This manual is recommended to be read with a fixed-width font.
 - 7.  VR Mode           -
 - 8.  Updates           -
 - 9.  Troubleshooting   -
-- 10.  Admin Tools      -
+- 10. Admin Tools       -
 - 11. Credits           -
 -------------------------
 
@@ -113,7 +113,7 @@ the object.
 | |_|  <-(5)                          (17)-> OS |
 | :-)  <-(6)                                    |
 |  e   <-(7)                                    |
-| [t]  <-(8)                                    |currently
+| [t]  <-(8)                                    |
 | <r>  <-(9)                                    |
 | C:/  <-(10)              (1)                  |
 | [O]  <-(11)                          ______   |
@@ -175,7 +175,7 @@ Launches the Half-Life Launcher. Only available in the debug place.
 If a controller is connected, this will appear to let you know that
 controller support is on. This window cannot be closed due to a bug
 and will not disappear until you disconnect your controller.
-(17) - OS Menu
+(17) - OS Button
 If the OS Menu is enabled, clicking on the OS button will open or
 close the menu.
 
@@ -209,7 +209,7 @@ computer at a glance.
 (4) - Shut Down
 Opens the Power Options menu, where you can choose
 if you wish to shut down the computer or cancel.
-messagesMessenger
+
 # 3. ROBLOX in Roblox
 
 NOTE: ROBLOX is not available in VR Mode.
@@ -239,8 +239,7 @@ and snaps build into place.
 -------------------------------------------------
 
 If you are on Mobile however, this screen will not be displayed
-and simply skip loading due to performance
-issues.
+and simply skip loading due to performance issues.
 
 NOTE: If you are using the Debug version of Windows XP Gui Test,
 your character will be invisible unless you click on the
@@ -337,7 +336,8 @@ NOTE: As Roblox updates have changed how the chat system works,
 you are now unable to send messages using Roblox Messenger
 unless it is updated to use the new chat APIs.
 
-NOTE: Roblox Messenger is not available on XBOX or Playstation.
+NOTE: Roblox Messenger is not available on XBOX or Playstation,
+unless it is updated to allow consoles to chat.
 
 Roblox Messenger lets you comminucate with other players connected
 to the same game server as you. Any message you send automatically
@@ -475,6 +475,93 @@ bypasses Roblox's chat filter, you may be manually permamently banned from
 this game. The game developer can also choose to log chat messages using
 leftover webhook code.
 
+# 5. The OS Menu
+
+The OS Menu is a replacement for the Roblox Menu, where you can view
+current players, your friends activity, achivements, and more.
+
+In the event of the simulated machine being broken, the OS Menu is forced
+open, so it is still possible to exit the simulator.
+
+NOTE: In earlier versions of Roblox, the OS Menu used to fully replace
+the Roblox menu. This was so players could still exit the simulator
+without being forced to close Roblox.
+
+NOTE: The version of the OS Menu included in Windows XP Gui Test is
+outdated and does not have features from OS Menu v2. If you wish to
+import the new version of the OS Menu in your version of the simulator,
+please note that some areas of Windows XP Gui Test use the OS Menu.
+
+To open the OS Menu at any time, simply click the OS button on the top
+right corner of the screen.
+
+NOTE: If you are on the log in screen, the OS Menu is hidden until
+you sign in. If you can't find the OS Menu at all, enable it using
+the OS Menu Settings application.
+
+-------------------------------------------------
+|  |_|                         (OS Button)-> OS |
+|  :-)                                          |
+|   e                                           |
+|  [t]                                          |
+|  <r>                                          |
+|  C:/                                          |
+|  [O]                                ______    |
+|   R                                /__/__/    |
+|  OS <-(OS Menu Settings)          /__/__/     |
+|   O                            Windows XP     |
+|   H                            Gui Test       |
+|_______________________________________________|
+|#start|                               |10:30 AM|
+-------------------------------------------------
+
+Once you click on the OS Button, the Windows XP environment will be hidden
+and the OS Menu will open. Below is yet another visualization of what
+your screen should look like.
+
+-------------------------------------------------
+|         (1)           (2)    (3)     (4)-> OS |
+|         \/            \/     \/               |
+|        _OS_Menu_______[]_____10:30_AM_        |
+|        |Close Menu <-(5)             |        |
+|        |Players <-(6)                |        |
+|        |Friends <-(7)                |        |
+|        |Profile <-(8)                |        |
+|        |Achievements <-(9)           |        |
+|        |Other Games <-(10)           |        |
+|        |Leave Game <-(11)            |        |
+|        -------------------------------        |
+|        [ESC] Close Menu [L] Leave Game <-(12) |
+|                                               |
+-------------------------------------------------
+
+(1) - Page Title
+The title of the page you are currently on.
+(2) - Avatar Icon
+Your Roblox profile picture. Replaced with our logo if your avatar icon
+is missing or deleted.
+(3) - Time
+Displays the current system time.
+(4) - OS Button
+Closes the OS Menu.
+(5) - Close Menu
+Also closes the OS Menu.
+(6) - Players
+Opens the Players page, where you can see all players that are connected.
+(7) - Friends
+Opens the Friends page, where you can see what your Friends are doing.
+(8) - Profile
+Opens your Profile page.
+(9) - Achievements
+Opens the Achivements page, which lists all of the achivements you have
+unlocked.
+(10) - Other Games
+Opens a list of other simulators made by The OS Simulation Project.
+(11) - Leave Game
+Asks you if you really want to leave the game.
+(12) - Keyboard Shortcuts
+Lists what keys are currently active on the page you're on.
+
 TBD
 
 # 11. Credits
@@ -490,3 +577,10 @@ MariotheDuck123 - Did stuff
 SpyNaz - GUI Dragging module
 Zomebody - Input Detection Script
 Lobestone - iPad/iPhone Keyboard Support
+
+Special thanks to:
+The Windows XP Team - This wouldn't exist without their hard work!
+The XBOX 360 Team - Making a really cool Xbox Guide that I had to replicate.
+Friends & Family - For helping test the simulator and giving me ideas.
+Roblox Players - Trying out this simulator out of the 50B+ Roblox places.
+You - For actually bothering to check out this manual.
