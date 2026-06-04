@@ -5,7 +5,7 @@
 #  The OS Simulation Project!  #
 #                              #
 #      Manual written by:      #
-#        Thomasluigi07!        #
+#           Tamasina           #
 #                              #
 ################################
 
@@ -386,9 +386,9 @@ NOTE: The File, Action, Tools and Help menu do not function.
 |  <| ___Username_|||Person: messag    ||Other_||
 |  C| Player List |||Dude: test test   ||I_w_to||
 |  [|  Username   |||Username: hello   ||Rules_||
-|   |  Dude  (1)  |||[C]Thomas: aaaaaa ||      ||
+|   |  Dude  (1)  |||[C]Tamasina: aaaa ||      ||
 |  O|  Person     |||------------------|| (11) ||
-|   |__Thomas_____|||________(8)_______||      ||
+|   |__Tamasina___|||________(8)_______||      ||
 |   |_(2)_________||____________________|______||
 |_______________________________________________|
 |#start||) RMesg.|M RConv.|            |10:30 AM|
@@ -407,7 +407,7 @@ _______________________________
  _________________________________
 | To: Everyone                    |
 |_________________________________|
-|[Creator] Thomas: aaaaaaaaa      |
+|[Creator] Tamasina: aaaa         |
 |Username: This is a message about|
 | something cool I guess   (9)    |
 |Dude: ok                         |
@@ -568,7 +568,7 @@ TBD
 
 and now... The Windows XP Gui Test Credits!
 
-Thomasluigi07 - Creator
+Tamasina - Creator
 TersisWilvin/9T2K - Made Roblox Messenger, most 2.0 UIs and some other things
 Karbis - Fixed some scripts
 robloxandtyler - Assisted with Roblox?

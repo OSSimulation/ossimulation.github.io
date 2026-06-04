@@ -1,24 +1,24 @@
 NOTE : BUILD NUMBERS BEFORE GROUP MERGE WERE NOT LOGGED AT ALL. TOTAL BUILD COUNT: 313 (103 on main, 210 on group)
 
-Thomas
+Tamasina
  — 
 12/03/2022, 00:19 (INTERNAL BUILD 8, ACTUAL BUILD 111)
 @iOS 6 updates Fixed date and time for 12:00 AM
 
-Thomas
+Tamasina
  — 
 18/03/2022, 15:31 (INTERNAL BUILD 16, ACTUAL BUILD 119)
 @iOS 6 updates 
 Setup is being worked on
 
-Thomas
+Tamasina
  — 
 02/04/2022, 12:35 (INTERNAL BUILD 27, ACTUAL BUILD 130)
 @Windows XP Gui Test Publish Notifications  @iOS 6 updates 
 Changed game name and description back to normal.
 (WINXP ONLY) If it is still April 1st for you, the game will still have the text strings. 
 
-Thomas
+Tamasina
  — 
 12/04/2022, 13:18 (INTERNAL BUILD 42, ACTUAL BUILD 145)
 @iOS 6 updates 
@@ -26,12 +26,12 @@ iOS 6 has been made private as
 - there is literally no functionality
 The game will come back later today when i work on it. 
 
-Thomas
+Tamasina
  — 
 14/04/2022, 15:39 (INTERNAL BUILD 48, ACTUAL BUILD 151)
 iOS 6 is still being worked on.
 
-Thomas
+Tamasina
  — 
 17/05/2022, 22:48 (INTERNAL BUILD 64, ACTUAL BUILD 167)
 @iOS 6 updates
@@ -40,7 +40,7 @@ Thomas
 (there's still not much, and a lot of bugs so please report them in 
 ⁠bug-reports-ios6-archive! Press F9 to see all errors/warnings.) 
 
-Thomas
+Tamasina
  — 
 18/05/2022, 19:35
 @iOS 6 updates (INTERNAL BUILD 78, ACTUAL BUILD 171)
@@ -51,7 +51,7 @@ Thomas
 - bug fixes
 - test app now has a proper icon 
 
-Thomas
+Tamasina
  — 
 28/05/2022, 14:25
 @iOS 6 updates  (INTERNAL BUILD 85, ACTUAL BUILD 188)
@@ -60,20 +60,20 @@ Thomas
 - removed carrier text changing
 - added Feedback app (non-functional at the moment)
 
-Thomas
+Tamasina
  — 
 29/05/2022, 19:25
 @iOS 6 updates (INTERNAL BUILD 87, ACTUAL BUILD 190)
 - Removed Feedback
 - Changed Size of Custom Topbar elements
 
-Thomas
+Tamasina
  — 
 30/05/2022, 14:15
 @iOS 6 updates (INTERNAL BUILD 88, ACTUAL BUILD 191)
 - Fixed Test App not launching
 
-Thomas
+Tamasina
  — 
 16/07/2022, 18:48
 @iOS 6 updates  (INTERNAL BUILD 100, ACTUAL BUILD 203)
@@ -82,20 +82,20 @@ Thomas
 - Home button only appears after completing Setup
 - Fixed very minor bugs
 
-Thomas
+Tamasina
  — 
 18/07/2022, 22:04
 @iOS 6 updates  (INTERNAL BUILD 103, ACTUAL BUILD 206)
 - Added animation to the "slide to unlock" and "slide to set up" dialog to make it more accurate
 
-Thomas
+Tamasina
  — 
 28/09/2022, 12:46
 @iOS 6 updates (INTERNAL BUILD 116, ACTUAL BUILD 219)
 - Added help text on how to use the sliders on PC
 - Bug fixes.
 
-Thomas
+Tamasina
  — 
 10/11/2022, 11:58
 @iOS 6 updates  (INTERNAL BUILD 122, ACTUAL BUILD 225)
@@ -110,7 +110,7 @@ Thomas
 - Added an animated border around the OS menu.
 - Fixed the OS Menu button being covered by the OS Menu
 
-Thomas
+Tamasina
  — 
 15/11/2022, 19:43
 @iOS 6 updates   (INTERNAL BUILD 165, ACTUAL BUILD 268)
@@ -130,7 +130,7 @@ Wow, an actual update!
 - Made final setup page text way more accurate
 Fun Fact: This update took 8 hours to develop :LuigiBeingShot: 
 
-Thomas
+Tamasina
  — 
 16/11/2022, 15:21
 @iOS 6 updates (INTERNAL BUILD 170, ACTUAL BUILD 273)
@@ -139,7 +139,7 @@ Thomas
 - Re-organised buttons on the main page
 - Added the Friends page, where you can view all of your Roblox friends, and see if they are online, offline or in-game at a glance.
 
-Thomas
+Tamasina
  — 
 26/11/2022, 11:26
 @iOS 6 updates  (INTERNAL BUILD 173, ACTUAL BUILD 276)

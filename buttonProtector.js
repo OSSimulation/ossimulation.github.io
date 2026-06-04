@@ -65,7 +65,7 @@ function invalidCounter() {
             alert("You asked for this, and now you are going to be kicked out. Bye bye!");
             setTimeout(function() {
                 document.body.remove();
-                window.location.replace("http://www.thomasluigi07.com");
+                window.location.replace("http://www.tamasina.com");
             }, 5000);
             document.getElementById("sfx_kick").play();
         }
@@ -92,7 +92,7 @@ if (!dontEvenBother) {
                     document.getElementById("osmenu").className = "osmenuclosed";
                 } else if (event.data == "9") {
                     document.body.remove();
-                    window.location.replace("http://www.thomasluigi07.com");
+                    window.location.replace("http://www.tamasina.com");
                 }
             } catch (e) {
                 console.log("Couldn't use event.data");

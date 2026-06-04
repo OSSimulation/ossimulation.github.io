@@ -33,7 +33,7 @@ function newsLoop() {
         changeNewsMsg("OLD NEWS","XBOX 360 Gui Test has been discontinued","../xbox360/index.html");
     }, 40000);
     setTimeout(() => {
-        changeNewsMsg("NEWS?","Thomas actually did something for this website","#");
+        changeNewsMsg("NEWS?","Tamasina actually did something for this website","#");
     }, 45000);
     setTimeout(() => {
         changeNewsMsg("NEWS?","I'm out of funny messages, so this will loop","#");

@@ -1,7 +1,7 @@
 // OS MENU : Now in JS!!! Holy Shit I hate Java Script
 // Reused code from the XBOX 360 iframe because I AM LAZY
 //
-// OS Menu v2 (HTML version), Thomasluigi07 2024 (this is a reference to the old os menu main script haha only real os simulation fans will get this one....)
+// OS Menu v2 (HTML version), Tamasina 2024 (this is a reference to the old os menu main script haha only real os simulation fans will get this one....)
 //
 // Check for newer browsers. This is used to make sure older browsers can view the webpage... NOT!
 var OSMENUEnabled = false;
